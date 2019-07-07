@@ -74,4 +74,16 @@
         tools:layout_editor_absoluteX="178dp"
         tools:layout_editor_absoluteY="71dp" />
 
+    <Button
+        android:id="@+id/btGoToQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="launchQuizScreen"
+        android:text="Quiz"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="253dp" />
+
 </android.support.constraint.ConstraintLayout>

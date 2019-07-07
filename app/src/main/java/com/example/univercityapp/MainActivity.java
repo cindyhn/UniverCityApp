@@ -88,8 +88,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //If already login
-        if(AccessToken.getCurrentAccessToken() != null)
-        {
+        if (AccessToken.getCurrentAccessToken() != null) {
 
         }
 
@@ -97,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getData(JSONObject object) {
         try {
-            URL profile_picture = new URL("https://graph.facebook.com/"+object.getString("id")+"/picture?width=250&height=250");
+            URL profile_picture = new URL("https://graph.facebook.com/" + object.getString("id") + "/picture?width=250&height=250");
 
             Picasso.with(this).load(profile_picture.toString())
                     .transform(new CircleTransform())
@@ -110,6 +109,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+    public void launchQuizScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), QuizActivity.class);
+        startActivity(myIntent);
+    }
 }
 
 /* Title: Facebook Login for Android - Quickstart source code

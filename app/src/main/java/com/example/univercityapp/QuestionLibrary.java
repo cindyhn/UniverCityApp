@@ -5,31 +5,31 @@ public class QuestionLibrary {
     public String [] questions = {
             "people see me as",
             "placeholder question 2",
-            //  "placeholder question 3",
-//            "placeholder question 4",
-//            "placeholder question 5",
-//            "placeholder question 6",
-//            "placeholder question 7",
-//            "placeholder question 8",
-//
+            "placeholder question 3",
+            "placeholder question 4",
+            "placeholder question 5",
+            "placeholder question 6",
+            "placeholder question 7",
+            "placeholder question 8",
+
 
     };
 
     public String [] [] choices = {
             {"creative", "analytical", "authoritative", "logical"},
             {"one", "two", "three", "four"},
-            //      {"uno", "dos", "tres", "quattro"},
-//        {"un", "deux", "trois", "quatre"},
-//        {"satu", "dua", "tiga", "empat"},
-//        {"okkati", "rendu", "murru", "nallu"},
-//        {"onnu", "rende", "munne", "nalle"},
-//        {"eek", "do", "deen", "jar"},
+            {"uno", "dos", "tres", "quattro"},
+            {"un", "deux", "trois", "quatre"},
+            {"satu", "dua", "tiga", "empat"},
+            {"okkati", "rendu", "murru", "nallu"},
+            {"onnu", "rende", "munne", "nalle"},
+            {"eek", "do", "deen", "jar"},
 
 
     };
 
     public String financeAnswers [] = {"analytical","two","dos"};
-    public String economicsAnswers [] = {"analytical", "two", "tres"};
+    public String economicsAnswers [] = {"analytical", "three", "tres"};
     public String marketingAnswers [] = {"creative", "one", "uno"};
 
 

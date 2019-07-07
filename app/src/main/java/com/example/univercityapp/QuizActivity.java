@@ -60,16 +60,22 @@ public class QuizActivity extends AppCompatActivity {
                     financeScore = financeScore + 1;
                     updateScore(financeScore);
 
-                    //      updateQuestion();
-
                 }
 
                 if(btQuizAnswer1.getText() == marketingAnswer){
                     marketingScore = marketingScore + 1;
                     updateScore(marketingScore);
 
-                    //    updateQuestion();
                 }
+
+                if(btQuizAnswer1.getText() == economicsAnswer) {
+                    economicsScore = economicsScore + 1;
+                    updateScore(economicsScore);
+
+                }
+
+                updateQuestion();
+
 
             }
 
@@ -86,13 +92,23 @@ public class QuizActivity extends AppCompatActivity {
                     financeScore = financeScore + 1;
                     updateScore(financeScore);
 
-                    //   updateQuestion();
+
 
                 }
+
                 if(btQuizAnswer2.getText() == economicsAnswer) {
                     economicsScore = economicsScore + 1;
                     updateScore(economicsScore);
+
                 }
+
+                if(btQuizAnswer2.getText() == marketingAnswer) {
+                    marketingScore = marketingScore + 1;
+                    updateScore(marketingScore);
+
+                }
+
+                updateQuestion();
 
             }
         });
@@ -106,9 +122,22 @@ public class QuizActivity extends AppCompatActivity {
                     financeScore = financeScore + 1;
                     updateScore(financeScore);
 
-                    updateQuestion();
 
                 }
+
+                if(btQuizAnswer3.getText() == economicsAnswer) {
+                    economicsScore = economicsScore + 1;
+                    updateScore(economicsScore);
+
+                }
+
+                if(btQuizAnswer3.getText() == marketingAnswer) {
+                    marketingScore = marketingScore + 1;
+                    updateScore(marketingScore);
+
+                }
+
+                updateQuestion();
 
             }
         });
@@ -122,12 +151,27 @@ public class QuizActivity extends AppCompatActivity {
                     financeScore = financeScore + 1;
                     updateScore(financeScore);
 
-                    updateQuestion();
+
 
                 }
 
+                if(btQuizAnswer4.getText() == economicsAnswer) {
+                    economicsScore = economicsScore + 1;
+                    updateScore(economicsScore);
+
+                }
+
+                if(btQuizAnswer4.getText() == marketingAnswer) {
+                    marketingScore = marketingScore + 1;
+                    updateScore(marketingScore);
+
+                }
+
+                updateQuestion();
+
             }
         });
+
 
     }
 
@@ -151,6 +195,7 @@ public class QuizActivity extends AppCompatActivity {
     public void updateScore(int point) {
         tvfinanceScore.setText(" " + financeScore);
         tvMarketingScore.setText((" " + marketingScore));
+        tvEconomicsScore.setText(" " + economicsScore);
 
     }
 

@@ -50,4 +50,3 @@ public class CircleTransform implements Transformation {
 /* Title: CircleTransform source code
    Author: Julian Shen
    Availability: https://gist.github.com/julianshen/5829333 */
-

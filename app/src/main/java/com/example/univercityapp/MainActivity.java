@@ -118,6 +118,16 @@ public class MainActivity extends AppCompatActivity {
         Intent myIntent = new Intent(getBaseContext(), QuizActivity.class);
         startActivity(myIntent);
     }
+
+    public void launchRegistrationScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), RegisterActivity.class);
+        startActivity(myIntent);
+    }
+
+    public void launchLoginScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), LoginActivity.class);
+        startActivity(myIntent);
+    }
 }
 
 /* Title: Facebook Login for Android - Quickstart source code

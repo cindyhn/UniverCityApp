@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/ivWelcomePlaceholder"
+        android:layout_width="249dp"
+        android:layout_height="268dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginBottom="295dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_upload_you_tube" />
+
+    <TextView
+        android:id="@+id/tvWelcomeIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="65dp"
+        android:text="Welcome to UniverCity"
+        app:layout_constraintBottom_toTopOf="@+id/ivWelcomePlaceholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

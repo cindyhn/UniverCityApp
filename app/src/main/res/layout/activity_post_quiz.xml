@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostQuizActivity">
+
+    <TextView
+        android:id="@+id/tvPostQuizText"
+        android:layout_width="383dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="532dp"
+        android:text="We believe the right major for you, based on your answers is:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvPostQuizRecommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="433dp"
+        android:text="placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPostQuizText" />
+</android.support.constraint.ConstraintLayout>

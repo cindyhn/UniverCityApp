@@ -11,6 +11,7 @@ public class QuestionLibrary {
             "placeholder question 6",
             "placeholder question 7",
             "placeholder question 8",
+            "Click Finish page"
 
 
     };
@@ -24,6 +25,7 @@ public class QuestionLibrary {
             {"okkati", "rendu", "murru", "nallu"},
             {"onnu", "rende", "munne", "nalle"},
             {"eek", "do", "deen", "jar"},
+
 
 
     };

@@ -1,5 +1,6 @@
 package com.example.univercityapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -197,6 +198,11 @@ public class QuizActivity extends AppCompatActivity {
         tvMarketingScore.setText((" " + marketingScore));
         tvEconomicsScore.setText(" " + economicsScore);
 
+    }
+
+    public void launchPostQuizScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), PostQuizActivity.class);
+        startActivity(myIntent);
     }
 
 }

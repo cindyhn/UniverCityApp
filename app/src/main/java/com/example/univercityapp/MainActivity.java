@@ -120,6 +120,12 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
+    public void launchMajorMapsScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), MajorMapsActivity.class);
+        startActivity(myIntent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
+
     public void launchRegistrationScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), RegisterActivity.class);
         startActivity(myIntent);

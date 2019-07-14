@@ -27,10 +27,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Dialog dialog = new Dialog(this,android.R.style.Theme_Translucent_NoTitleBar);
-        View v = this.getLayoutInflater().inflate(R.layout.progressbar,null);
-        dialog.setContentView(v);
-        dialog.show();
+//        Dialog dialog = new Dialog(this,android.R.style.Theme_Translucent_NoTitleBar);
+//        View v = this.getLayoutInflater().inflate(R.layout.progressbar,null);
+//        dialog.setContentView(v);
+//        dialog.show();
 
         db = new DatabaseHelper(this);
         mTextUsername = (EditText)findViewById(R.id.edittext_username);
@@ -64,13 +64,13 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void showProgressingView() {
-
-        if (!isProgressShowing) {
-            View view=findViewById(R.id.progressBar1);
-            view.bringToFront();
-        }
-    }
+//    public void showProgressingView() {
+//
+//        if (!isProgressShowing) {
+//            View view=findViewById(R.id.progressBar1);
+//            view.bringToFront();
+//        }
+//    }
 
     public void hideProgressingView() {
         View v = this.findViewById(android.R.id.content).getRootView();

@@ -3,6 +3,7 @@ package com.example.univercityapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +22,9 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+//        EditText password = (EditText) findViewById(R.id.edittext_password);
+//        password.setTransformationMethod(new PasswordTransformationMethod());
 
         db = new DatabaseHelper(this);
         mTextUsername = (EditText)findViewById(R.id.edittext_username);

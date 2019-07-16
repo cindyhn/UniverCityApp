@@ -4,14 +4,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class PostQuizActivity extends AppCompatActivity {
 
     //    public String recommendedMajor = " ";
     public TextView tvPostQuizText, tvPostQuizRecommendation;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +26,29 @@ public class PostQuizActivity extends AppCompatActivity {
         tvPostQuizRecommendation = findViewById(R.id.tvPostQuizRecommendation);
         tvPostQuizText = findViewById(R.id.tvPostQuizText);
 
-        int majorScores = Collections.max(Arrays.asList(Global.economicsScore, Global.financeScore, Global.marketingScore));
+        //  ArrayList<String> majorList = new ArrayList<>();
+        ArrayList<Integer> majorScores = new ArrayList();
 
-        System.out.println(majorScores);
+        majorScores.add(Global.financeScore);
+        majorScores.add(Global.economicsScore);
+        majorScores.add(Global.marketingScore);
 
-        tvPostQuizRecommendation.setText("" + majorScores);
+        ArrayList<String> recommendedMajor = new ArrayList<>();
 
-//        tvPostQuizText.setText();
+        recommendedMajor.add("Finance");
+        recommendedMajor.add("Economics");
+        recommendedMajor.add("Marketing");
+
+
+        int highestMajorScore = Collections.max(majorScores);
+        int recommendedMajorIndex = majorScores.indexOf(highestMajorScore);
+
+        System.out.println(recommendedMajorIndex);
+
+
+        tvPostQuizRecommendation.setText(recommendedMajor.get(recommendedMajorIndex));
+
 
 
     }
 }
-

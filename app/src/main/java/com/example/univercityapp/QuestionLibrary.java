@@ -3,35 +3,36 @@ package com.example.univercityapp;
 public class QuestionLibrary {
 
     public String [] questions = {
-            "people see me as",
-            "placeholder question 2",
-            "placeholder question 3",
-            "placeholder question 4",
-            "placeholder question 5",
-            "placeholder question 6",
-            "placeholder question 7",
-            "placeholder question 8",
-            "Click Finish page"
+            "Which of the following do you most identify as?",
+            "Which of these industries would you like to learn more about?",
+            "What is your biggest hobby?",
+            "How would you describe your working style?",
+            "In a career, you are most interested in what?",
+            "When making decisions, what crosses your mind?",
+            "Theoretical concepts or number crunching?",
+            "Regular work routine or unpredictable work day?",
+            "Well done! Click below proceed"
 
 
     };
 
     public String [] [] choices = {
-            {"creative", "analytical", "authoritative", "logical"},
-            {"one", "two", "three", "four"},
-            {"uno", "dos", "tres", "quattro"},
-            {"un", "deux", "trois", "quatre"},
-            {"satu", "dua", "tiga", "empat"},
-            {"okkati", "rendu", "murru", "nallu"},
-            {"onnu", "rende", "munne", "nalle"},
-            {"eek", "do", "deen", "jar"},
-
+            {"people person", "analytical", "leader", "creative"},
+            {"banking", "real estate", "economics", "content creation"},
+            {"travelling", "team sports", "chess", "monopoly"},
+            {"customer focused", "detail-oriented", "fast-paced", "innovative"},
+            {"keeping up with trends in an exciting market", "setting the teams direction", "being able to apply your knowledge across multiple  markets and industries", "self-employment"},
+            {"best outcome for yourself", "reviewing and assessing all available information", "the needs of others affected", "researching and analysing a range of information"},
+            {"numbers", "theory", "placeholder", "placeholder"},
+            {"routine", "excitement", "placeholder", "placeholder"},
+            {"1","2","3","4"}
 
 
     };
 
+
     public String financeAnswers [] = {"analytical","two","dos"};
-    public String economicsAnswers [] = {"analytical", "three", "tres"};
+    public String economicsAnswers [] = {"analytical", "economics", "tres"};
     public String marketingAnswers [] = {"creative", "one", "uno"};
 
 

@@ -11,14 +11,16 @@ public class QuizActivity extends AppCompatActivity {
 
     public QuestionLibrary questionLibrary = new QuestionLibrary();
 
-    public int financeScore = 0;
-    public int economicsScore = 0;
-    public int marketingScore = 0;
+    //    public int financeScore = 0;
+//    public int economicsScore = 0;
+//    public int marketingScore = 0;
     public int realEstateScore = 0;
     public int managementScore = 0;
     public int infoSysScore = 0;
     public int accountingScore = 0;
     public int humanResourcesScore = 0;
+
+
 
 
     public TextView tvEconomicsScore;
@@ -58,20 +60,20 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(btQuizAnswer1.getText() == financeAnswer) {
-                    financeScore = financeScore + 1;
-                    updateScore(financeScore);
+                    Global.financeScore = Global.financeScore + 1;
+                    updateScore(Global.financeScore);
 
                 }
 
                 if(btQuizAnswer1.getText() == marketingAnswer){
-                    marketingScore = marketingScore + 1;
-                    updateScore(marketingScore);
+                    Global.marketingScore = Global.marketingScore + 1;
+                    updateScore(Global.marketingScore);
 
                 }
 
                 if(btQuizAnswer1.getText() == economicsAnswer) {
-                    economicsScore = economicsScore + 1;
-                    updateScore(economicsScore);
+                    Global.economicsScore = Global.economicsScore + 1;
+                    updateScore(Global.economicsScore);
 
                 }
 
@@ -90,22 +92,19 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(btQuizAnswer2.getText() == financeAnswer) {
-                    financeScore = financeScore + 1;
-                    updateScore(financeScore);
-
-
+                    Global.financeScore = Global.financeScore + 1;
+                    updateScore(Global.financeScore);
 
                 }
 
                 if(btQuizAnswer2.getText() == economicsAnswer) {
-                    economicsScore = economicsScore + 1;
-                    updateScore(economicsScore);
-
+                    Global.economicsScore = Global.economicsScore + 1;
+                    updateScore(Global.economicsScore);
                 }
 
                 if(btQuizAnswer2.getText() == marketingAnswer) {
-                    marketingScore = marketingScore + 1;
-                    updateScore(marketingScore);
+                    Global.marketingScore = Global.marketingScore + 1;
+                    updateScore(Global.marketingScore);
 
                 }
 
@@ -120,21 +119,22 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(btQuizAnswer3.getText() == financeAnswer) {
-                    financeScore = financeScore + 1;
-                    updateScore(financeScore);
+                    Global.financeScore = Global.financeScore + 1;
+                    updateScore(Global.financeScore);
+
 
 
                 }
 
                 if(btQuizAnswer3.getText() == economicsAnswer) {
-                    economicsScore = economicsScore + 1;
-                    updateScore(economicsScore);
+                    Global.economicsScore = Global.economicsScore + 1;
+                    updateScore(Global.economicsScore);
 
                 }
 
                 if(btQuizAnswer3.getText() == marketingAnswer) {
-                    marketingScore = marketingScore + 1;
-                    updateScore(marketingScore);
+                    Global.marketingScore = Global.marketingScore + 1;
+                    updateScore(Global.marketingScore);
 
                 }
 
@@ -149,22 +149,22 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(btQuizAnswer4.getText() == financeAnswer) {
-                    financeScore = financeScore + 1;
-                    updateScore(financeScore);
+                    Global.financeScore = Global.financeScore + 1;
+                    updateScore(Global.financeScore);
 
 
 
                 }
 
                 if(btQuizAnswer4.getText() == economicsAnswer) {
-                    economicsScore = economicsScore + 1;
-                    updateScore(economicsScore);
+                    Global.economicsScore = Global.economicsScore + 1;
+                    updateScore(Global.economicsScore);
 
                 }
 
                 if(btQuizAnswer4.getText() == marketingAnswer) {
-                    marketingScore = marketingScore + 1;
-                    updateScore(marketingScore);
+                    Global.marketingScore = Global.marketingScore + 1;
+                    updateScore(Global.marketingScore);
 
                 }
 
@@ -194,9 +194,9 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void updateScore(int point) {
-        tvfinanceScore.setText(" " + financeScore);
-        tvMarketingScore.setText((" " + marketingScore));
-        tvEconomicsScore.setText(" " + economicsScore);
+        tvfinanceScore.setText(" " + Global.financeScore);
+        tvMarketingScore.setText((" " + Global.marketingScore));
+        tvEconomicsScore.setText(" " + Global.economicsScore);
 
     }
 

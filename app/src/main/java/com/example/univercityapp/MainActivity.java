@@ -137,6 +137,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
+
+    public void launchExplorationScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), ExplorationActivity.class);
+        startActivity(myIntent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
 }
 
 /* Title: Facebook Login for Android - Quickstart source code

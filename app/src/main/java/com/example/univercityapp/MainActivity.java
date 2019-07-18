@@ -144,8 +144,8 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
-    public void launchWamCalculatorScreen(View v) {
-        Intent myIntent = new Intent(getBaseContext(), WamCalculatorActivity.class);
+    public void launchMyWamScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), MyWamActivity.class);
         startActivity(myIntent);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }

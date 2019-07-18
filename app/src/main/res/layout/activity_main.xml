@@ -125,8 +125,8 @@
         android:id="@+id/btWamCalculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="launchWamCalculatorScreen"
-        android:text="Wam Calculator"
+        android:onClick="launchMyWamScreen"
+        android:text="My Wam"
         tools:layout_editor_absoluteX="44dp"
         tools:layout_editor_absoluteY="94dp" />
 

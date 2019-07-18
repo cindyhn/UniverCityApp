@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WamCalculatorActivity"></activity>
+        <activity android:name=".MyWamActivity"></activity>
+        <activity android:name=".UseExistingWamActivity" />
         <activity android:name=".ExplorationActivity" />
         <activity android:name=".MajorMapsActivity" />
         <activity android:name=".WelcomeActivity">

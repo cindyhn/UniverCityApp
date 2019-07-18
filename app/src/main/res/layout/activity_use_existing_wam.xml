@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WamCalculatorActivity">
+    tools:context=".UseExistingWamActivity">
 
     <EditText
         android:id="@+id/etTotalCredits"
@@ -17,40 +17,16 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTotalCredits" />
 
     <TextView
-        android:id="@+id/tvMyWam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="226dp"
-        android:layout_marginEnd="237dp"
-        android:text="My WAM"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvWam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="263dp"
-        android:text="--"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMyWam" />
-
-    <TextView
         android:id="@+id/tvUseExistingWam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="311dp"
         android:layout_marginEnd="149dp"
         android:text="Use existing WAM"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWam" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvDescription1"
@@ -120,15 +96,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTotalCredits" />
-
-    <TextView
-        android:id="@+id/tvWamGrade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:text="--"
-        app:layout_constraintBottom_toBottomOf="@+id/tvWam"
-        app:layout_constraintStart_toEndOf="@+id/tvWam"
-        app:layout_constraintTop_toTopOf="@+id/tvWam" />
 
 </android.support.constraint.ConstraintLayout>

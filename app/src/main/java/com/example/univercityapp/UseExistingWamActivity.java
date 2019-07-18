@@ -1,5 +1,6 @@
 package com.example.univercityapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,21 +8,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+public class UseExistingWamActivity extends AppCompatActivity {
 
-public class WamCalculatorActivity extends AppCompatActivity {
 
-    TextView tvWam;
-    TextView tvWamGrade;
     EditText etPreviousWam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wam_calculator);
+        setContentView(R.layout.activity_use_existing_wam);
 
-        tvWam = findViewById(R.id.tvWam);
-        tvWamGrade = findViewById(R.id.tvWamGrade);
+
         etPreviousWam = findViewById(R.id.etPreviousWam);
 
         Button btAddWam = (Button) findViewById(R.id.btAddWam);
@@ -30,27 +27,29 @@ public class WamCalculatorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String previousWam = etPreviousWam.getText().toString();
-                tvWam.setText(previousWam);
+                Global.previousWam = etPreviousWam.getText().toString();
 
-                int wam = Integer.parseInt(previousWam);
-                String grade;
+                double wam = Double.parseDouble(Global.previousWam);
 
                 if (wam >= 85) {
-                    grade = "HD";
+                    Global.grade = "HD";
                 }
                 else if (wam >= 75) {
-                    grade = "D";
+                    Global.grade = "D";
                 }
                 else if (wam >= 65) {
-                    grade = "C";
+                    Global.grade = "C";
                 }
                 else {
-                    grade = "P";
+                    Global.grade = "P";
                 }
 
-                System.out.println(grade);
-                tvWamGrade.setText(grade);
+                System.out.println(wam);
+                System.out.println(Global.grade);
+
+
+                Intent myIntent = new Intent(getBaseContext(), MyWamActivity.class);
+                startActivity(myIntent);
             }
         });
 

@@ -10,8 +10,8 @@ public class QuestionLibrary {
             "In a career, you are most interested in what?",
             "When making decisions, what crosses your mind?",
             "Theoretical concepts or number crunching?",
-            "Regular work routine or unpredictable work day?",
-            "Well done! Click below proceed"
+            "Regular work routine or unpredictable work day?"
+
 
 
     };
@@ -25,15 +25,23 @@ public class QuestionLibrary {
             {"best outcome for yourself", "reviewing and assessing all available information", "the needs of others affected", "researching and analysing a range of information"},
             {"numbers", "theory", "placeholder", "placeholder"},
             {"routine", "excitement", "placeholder", "placeholder"},
-            {"1","2","3","4"}
 
 
     };
 
 
     public String financeAnswers [] = {"analytical","two","dos"};
-    public String economicsAnswers [] = {"analytical", "economics", "tres"};
+    public String businessEconomicsAnswers[] = {"analytical", "economics", "tres"};
     public String marketingAnswers [] = {"creative", "one", "uno"};
+    public String accountingAnswers [] = {"placeholder", "placeholder", "placeholder"};
+    public String busLawAnswers [] = {"placeholder", "placeholder", "placeholder"};
+    public String busStratAnswers [] = {"placeholder", "placeholder", "placeholder"};
+    public String financialEconomicsAnswers [] = {"placeholder", "placeholder", "placeholder"};
+    public String hrMgmtAnswers [] = {"placeholder", "placeholder", "placeholder"};
+    public String intlBusinessAnswers [] = {"placeholder", "placeholder", "placeholder"};
+    public String mgmtAnswers [] = {"placeholder", "placeholder", "placeholder"};
+    public String realEstateAnswers [] = {"placeholder", "placeholder", "placeholder"};
+    public String taxationAnswers [] = {"placeholder", "placeholder", "placeholder"};
 
 
 
@@ -73,12 +81,57 @@ public class QuestionLibrary {
     }
 
     public String getEconomicsAnswers(int a) {
-        String answer = economicsAnswers[a];
+        String answer = businessEconomicsAnswers[a];
+        return answer;
+    }
+
+    public String getAccountingAnswers(int a) {
+        String answer = accountingAnswers[a];
         return answer;
     }
 
     public String getMarketingAnswers(int a) {
         String answer = marketingAnswers[a];
+        return answer;
+    }
+
+    public String getBusLawAnswers(int a) {
+        String answer = busLawAnswers[a];
+        return answer;
+    }
+
+    public String getBusStratAnswers(int a) {
+        String answer = busStratAnswers[a];
+        return answer;
+    }
+
+    public String getFinancialEconomicsAnswers(int a) {
+        String answer = financialEconomicsAnswers[a];
+        return answer;
+    }
+
+    public String getHRMgmtAnswers(int a) {
+        String answer = hrMgmtAnswers[a];
+        return answer;
+    }
+
+    public String getIntlBusinessAnswers(int a) {
+        String answer = intlBusinessAnswers[a];
+        return answer;
+    }
+
+    public String getMgmtAnswers(int a) {
+        String answer = mgmtAnswers[a];
+        return answer;
+    }
+
+    public String getRealEstateAnswers(int a) {
+        String answer = realEstateAnswers[a];
+        return answer;
+    }
+
+    public String getTaxationAnswers(int a) {
+        String answer = taxationAnswers[a];
         return answer;
     }
 

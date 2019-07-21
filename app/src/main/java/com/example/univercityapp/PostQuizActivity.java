@@ -4,11 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
 
 public class PostQuizActivity extends AppCompatActivity {
 
@@ -30,7 +27,7 @@ public class PostQuizActivity extends AppCompatActivity {
         ArrayList<Integer> majorScores = new ArrayList();
 
         majorScores.add(Global.financeScore);
-        majorScores.add(Global.economicsScore);
+        majorScores.add(Global.businessEconomicsScore);
         majorScores.add(Global.marketingScore);
 
         ArrayList<String> recommendedMajor = new ArrayList<>();

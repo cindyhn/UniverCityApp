@@ -11,21 +11,7 @@ public class QuizActivity extends AppCompatActivity {
 
     public QuestionLibrary questionLibrary = new QuestionLibrary();
 
-    //    public int financeScore = 0;
-//    public int economicsScore = 0;
-//    public int marketingScore = 0;
-    public int realEstateScore = 0;
-    public int managementScore = 0;
-    public int infoSysScore = 0;
-    public int accountingScore = 0;
-    public int humanResourcesScore = 0;
 
-
-
-
-    public TextView tvEconomicsScore;
-    public TextView tvMarketingScore;
-    public TextView tvfinanceScore;
     public TextView tvQuizQuestion;
     public Button btQuizAnswer1;
     public Button btQuizAnswer2;
@@ -34,8 +20,20 @@ public class QuizActivity extends AppCompatActivity {
 
 
     public String financeAnswer;
-    public String economicsAnswer;
+    public String businessEconomicsAnswer;
     public String marketingAnswer;
+    public String accountingAnswer;
+    public String businessLawAnswer;
+    public String busStratAnswer;
+    public String financialEconomicsAnswer;
+    public String hrMgmtAnswer;
+    public String intlBusinessAnswer;
+    public String mgmtAnswer;
+    public String realEstateAnswer;
+    public String taxationAnswer;
+
+
+
     public int questionNumber = 0;
 
 
@@ -49,9 +47,6 @@ public class QuizActivity extends AppCompatActivity {
         btQuizAnswer2 = findViewById(R.id.btQuizAnswer2);
         btQuizAnswer3 = findViewById(R.id.btQuizAnswer3);
         btQuizAnswer4 = findViewById(R.id.btQuizAnswer4);
-        tvfinanceScore = findViewById(R.id.tvQuizFinanceScore);
-        tvEconomicsScore = findViewById(R.id.tvQuizEconomicsScore);
-        tvMarketingScore = findViewById(R.id.tvQuizMarketingScore);
 
         updateQuestion();
 
@@ -71,11 +66,66 @@ public class QuizActivity extends AppCompatActivity {
 
                 }
 
-                if(btQuizAnswer1.getText() == economicsAnswer) {
-                    Global.economicsScore = Global.economicsScore + 1;
-                    updateScore(Global.economicsScore);
+                if(btQuizAnswer1.getText() == businessEconomicsAnswer) {
+                    Global.businessEconomicsScore = Global.businessEconomicsScore + 1;
+                    updateScore(Global.businessEconomicsScore);
 
                 }
+
+                if(btQuizAnswer1.getText() == accountingAnswer) {
+                    Global.accountingScore = Global.accountingScore + 1;
+                    updateScore(Global.accountingScore);
+
+                }
+
+                if(btQuizAnswer1.getText() == businessLawAnswer) {
+                    Global.businessLawScore = Global.businessLawScore + 1;
+                    updateScore(Global.businessLawScore);
+
+                }
+
+                if(btQuizAnswer1.getText() == busStratAnswer) {
+                    Global.busStratScore = Global.busStratScore + 1;
+                    updateScore(Global.busStratScore);
+
+                }
+
+                if(btQuizAnswer1.getText() == financialEconomicsAnswer) {
+                    Global.financialEconomicsScore = Global.financialEconomicsScore + 1;
+                    updateScore(Global.financialEconomicsScore);
+
+                }
+
+                if(btQuizAnswer1.getText() == hrMgmtAnswer) {
+                    Global.hrMgmtScore = Global.hrMgmtScore + 1;
+                    updateScore(Global.hrMgmtScore);
+
+                }
+
+                if(btQuizAnswer1.getText() == intlBusinessAnswer) {
+                    Global.intlBusinessScore = Global.intlBusinessScore + 1;
+                    updateScore(Global.intlBusinessScore);
+
+                }
+
+                if(btQuizAnswer1.getText() == mgmtAnswer) {
+                    Global.mgmtScore = Global.mgmtScore + 1;
+                    updateScore(Global.mgmtScore);
+
+                }
+
+                if(btQuizAnswer1.getText() == realEstateAnswer) {
+                    Global.realEstateScore = Global.realEstateScore + 1;
+                    updateScore(Global.realEstateScore);
+
+                }
+
+                if(btQuizAnswer1.getText() == taxationAnswer) {
+                    Global.taxationScore = Global.taxationScore + 1;
+                    updateScore(Global.taxationScore);
+
+                }
+
 
                 updateQuestion();
 
@@ -85,7 +135,6 @@ public class QuizActivity extends AppCompatActivity {
 
 
         });
-
 
         btQuizAnswer2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,22 +146,80 @@ public class QuizActivity extends AppCompatActivity {
 
                 }
 
-                if(btQuizAnswer2.getText() == economicsAnswer) {
-                    Global.economicsScore = Global.economicsScore + 1;
-                    updateScore(Global.economicsScore);
-                }
-
-                if(btQuizAnswer2.getText() == marketingAnswer) {
+                if(btQuizAnswer2.getText() == marketingAnswer){
                     Global.marketingScore = Global.marketingScore + 1;
                     updateScore(Global.marketingScore);
 
                 }
 
+                if(btQuizAnswer2.getText() == businessEconomicsAnswer) {
+                    Global.businessEconomicsScore = Global.businessEconomicsScore + 1;
+                    updateScore(Global.businessEconomicsScore);
+
+                }
+
+                if(btQuizAnswer2.getText() == accountingAnswer) {
+                    Global.accountingScore = Global.accountingScore + 1;
+                    updateScore(Global.accountingScore);
+
+                }
+
+                if(btQuizAnswer2.getText() == businessLawAnswer) {
+                    Global.businessLawScore = Global.businessLawScore + 1;
+                    updateScore(Global.businessLawScore);
+
+                }
+
+                if(btQuizAnswer2.getText() == busStratAnswer) {
+                    Global.busStratScore = Global.busStratScore + 1;
+                    updateScore(Global.busStratScore);
+
+                }
+
+                if(btQuizAnswer2.getText() == financialEconomicsAnswer) {
+                    Global.financialEconomicsScore = Global.financialEconomicsScore + 1;
+                    updateScore(Global.financialEconomicsScore);
+
+                }
+
+                if(btQuizAnswer2.getText() == hrMgmtAnswer) {
+                    Global.hrMgmtScore = Global.hrMgmtScore + 1;
+                    updateScore(Global.hrMgmtScore);
+
+                }
+
+                if(btQuizAnswer2.getText() == intlBusinessAnswer) {
+                    Global.intlBusinessScore = Global.intlBusinessScore + 1;
+                    updateScore(Global.intlBusinessScore);
+
+                }
+
+                if(btQuizAnswer2.getText() == mgmtAnswer) {
+                    Global.mgmtScore = Global.mgmtScore + 1;
+                    updateScore(Global.mgmtScore);
+
+                }
+
+                if(btQuizAnswer2.getText() == realEstateAnswer) {
+                    Global.realEstateScore = Global.realEstateScore + 1;
+                    updateScore(Global.realEstateScore);
+
+                }
+
+                if(btQuizAnswer2.getText() == taxationAnswer) {
+                    Global.taxationScore = Global.taxationScore + 1;
+                    updateScore(Global.taxationScore);
+
+                }
+
                 updateQuestion();
 
-            }
-        });
 
+            }
+
+
+
+        });
 
         btQuizAnswer3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,27 +229,82 @@ public class QuizActivity extends AppCompatActivity {
                     Global.financeScore = Global.financeScore + 1;
                     updateScore(Global.financeScore);
 
-
-
                 }
 
-                if(btQuizAnswer3.getText() == economicsAnswer) {
-                    Global.economicsScore = Global.economicsScore + 1;
-                    updateScore(Global.economicsScore);
-
-                }
-
-                if(btQuizAnswer3.getText() == marketingAnswer) {
+                if(btQuizAnswer3.getText() == marketingAnswer){
                     Global.marketingScore = Global.marketingScore + 1;
                     updateScore(Global.marketingScore);
 
                 }
 
+                if(btQuizAnswer3.getText() == businessEconomicsAnswer) {
+                    Global.businessEconomicsScore = Global.businessEconomicsScore + 1;
+                    updateScore(Global.businessEconomicsScore);
+
+                }
+
+                if(btQuizAnswer3.getText() == accountingAnswer) {
+                    Global.accountingScore = Global.accountingScore + 1;
+                    updateScore(Global.accountingScore);
+
+                }
+
+                if(btQuizAnswer3.getText() == businessLawAnswer) {
+                    Global.businessLawScore = Global.businessLawScore + 1;
+                    updateScore(Global.businessLawScore);
+
+                }
+
+                if(btQuizAnswer3.getText() == busStratAnswer) {
+                    Global.busStratScore = Global.busStratScore + 1;
+                    updateScore(Global.busStratScore);
+
+                }
+
+                if(btQuizAnswer3.getText() == financialEconomicsAnswer) {
+                    Global.financialEconomicsScore = Global.financialEconomicsScore + 1;
+                    updateScore(Global.financialEconomicsScore);
+
+                }
+
+                if(btQuizAnswer3.getText() == hrMgmtAnswer) {
+                    Global.hrMgmtScore = Global.hrMgmtScore + 1;
+                    updateScore(Global.hrMgmtScore);
+
+                }
+
+                if(btQuizAnswer3.getText() == intlBusinessAnswer) {
+                    Global.intlBusinessScore = Global.intlBusinessScore + 1;
+                    updateScore(Global.intlBusinessScore);
+
+                }
+
+                if(btQuizAnswer3.getText() == mgmtAnswer) {
+                    Global.mgmtScore = Global.mgmtScore + 1;
+                    updateScore(Global.mgmtScore);
+
+                }
+
+                if(btQuizAnswer3.getText() == realEstateAnswer) {
+                    Global.realEstateScore = Global.realEstateScore + 1;
+                    updateScore(Global.realEstateScore);
+
+                }
+
+                if(btQuizAnswer3.getText() == taxationAnswer) {
+                    Global.taxationScore = Global.taxationScore + 1;
+                    updateScore(Global.taxationScore);
+
+                }
+
                 updateQuestion();
 
-            }
-        });
 
+            }
+
+
+
+        });
 
         btQuizAnswer4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,27 +314,82 @@ public class QuizActivity extends AppCompatActivity {
                     Global.financeScore = Global.financeScore + 1;
                     updateScore(Global.financeScore);
 
-
-
                 }
 
-                if(btQuizAnswer4.getText() == economicsAnswer) {
-                    Global.economicsScore = Global.economicsScore + 1;
-                    updateScore(Global.economicsScore);
-
-                }
-
-                if(btQuizAnswer4.getText() == marketingAnswer) {
+                if(btQuizAnswer4.getText() == marketingAnswer){
                     Global.marketingScore = Global.marketingScore + 1;
                     updateScore(Global.marketingScore);
 
                 }
 
+                if(btQuizAnswer4.getText() == businessEconomicsAnswer) {
+                    Global.businessEconomicsScore = Global.businessEconomicsScore + 1;
+                    updateScore(Global.businessEconomicsScore);
+
+                }
+
+                if(btQuizAnswer4.getText() == accountingAnswer) {
+                    Global.accountingScore = Global.accountingScore + 1;
+                    updateScore(Global.accountingScore);
+
+                }
+
+                if(btQuizAnswer4.getText() == businessLawAnswer) {
+                    Global.businessLawScore = Global.businessLawScore + 1;
+                    updateScore(Global.businessLawScore);
+
+                }
+
+                if(btQuizAnswer4.getText() == busStratAnswer) {
+                    Global.busStratScore = Global.busStratScore + 1;
+                    updateScore(Global.busStratScore);
+
+                }
+
+                if(btQuizAnswer4.getText() == financialEconomicsAnswer) {
+                    Global.financialEconomicsScore = Global.financialEconomicsScore + 1;
+                    updateScore(Global.financialEconomicsScore);
+
+                }
+
+                if(btQuizAnswer4.getText() == hrMgmtAnswer) {
+                    Global.hrMgmtScore = Global.hrMgmtScore + 1;
+                    updateScore(Global.hrMgmtScore);
+
+                }
+
+                if(btQuizAnswer4.getText() == intlBusinessAnswer) {
+                    Global.intlBusinessScore = Global.intlBusinessScore + 1;
+                    updateScore(Global.intlBusinessScore);
+
+                }
+
+                if(btQuizAnswer4.getText() == mgmtAnswer) {
+                    Global.mgmtScore = Global.mgmtScore + 1;
+                    updateScore(Global.mgmtScore);
+
+                }
+
+                if(btQuizAnswer4.getText() == realEstateAnswer) {
+                    Global.realEstateScore = Global.realEstateScore + 1;
+                    updateScore(Global.realEstateScore);
+
+                }
+
+                if(btQuizAnswer4.getText() == taxationAnswer) {
+                    Global.taxationScore = Global.taxationScore + 1;
+                    updateScore(Global.taxationScore);
+
+                }
+
                 updateQuestion();
 
-            }
-        });
 
+            }
+
+
+
+        });
 
     }
 
@@ -186,17 +403,28 @@ public class QuizActivity extends AppCompatActivity {
         btQuizAnswer4.setText(questionLibrary.getChoice4(questionNumber));
         financeAnswer = questionLibrary.getFinanceAnswers(questionNumber);
         marketingAnswer = questionLibrary.getMarketingAnswers(questionNumber);
-        economicsAnswer = questionLibrary.getEconomicsAnswers(questionNumber);
+        businessEconomicsAnswer = questionLibrary.getEconomicsAnswers(questionNumber);
+        accountingAnswer = questionLibrary.getAccountingAnswers(questionNumber);
+       businessLawAnswer = questionLibrary.getBusLawAnswers(questionNumber);
+       busStratAnswer = questionLibrary.getBusStratAnswers(questionNumber);
+       financialEconomicsAnswer = questionLibrary.getFinancialEconomicsAnswers(questionNumber);
+        hrMgmtAnswer = questionLibrary.getHRMgmtAnswers(questionNumber);
+       intlBusinessAnswer = questionLibrary.getIntlBusinessAnswers(questionNumber);
+       mgmtAnswer = questionLibrary.getMgmtAnswers(questionNumber);
+       realEstateAnswer = questionLibrary.getRealEstateAnswers(questionNumber);
+       taxationAnswer = questionLibrary.getTaxationAnswers(questionNumber);
 
 
+        if(questionNumber == 8) {
+            QuizActivity.this.finish();
+            Intent myIntent = new Intent(getBaseContext(), PostQuizActivity.class);
+            startActivity(myIntent);
+        }
         questionNumber++;
 
     }
 
     public void updateScore(int point) {
-        tvfinanceScore.setText(" " + Global.financeScore);
-        tvMarketingScore.setText((" " + Global.marketingScore));
-        tvEconomicsScore.setText(" " + Global.economicsScore);
 
     }
 

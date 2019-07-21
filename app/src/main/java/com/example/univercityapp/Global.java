@@ -20,6 +20,7 @@ public class Global {
 
 
     public static String previousWam;
-    public static double wam = 0;
     public static String grade;
+    public static String newWam;
+    public static String totalUOC;
 }

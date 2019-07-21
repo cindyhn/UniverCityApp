@@ -27,4 +27,9 @@ public class MyWamActivity extends AppCompatActivity {
         Intent myIntent = new Intent(getBaseContext(), UseExistingWamActivity.class);
         startActivity(myIntent);
     }
+
+    public void launchCreateNewCourseScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), CreateNewCourseActivity.class);
+        startActivity(myIntent);
+    }
 }

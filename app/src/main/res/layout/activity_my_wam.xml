@@ -52,4 +52,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvWamGrade" />
+
+    <Button
+        android:id="@+id/btCreateNewCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="122dp"
+        android:onClick="launchCreateNewCourseScreen"
+        android:text="Create new course"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btUseExistingWam" />
 </android.support.constraint.ConstraintLayout>

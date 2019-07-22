@@ -10,9 +10,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.List;
 
 public class CreateNewCourseActivity extends AppCompatActivity {
 
@@ -33,7 +31,7 @@ public class CreateNewCourseActivity extends AppCompatActivity {
         etCourseName = findViewById(R.id.etCourseName);
         etUnitsOfCredit = findViewById(R.id.etUnitsOfCredit);
         etMark = findViewById(R.id.etMark);
-        listView = findViewById(R.id.listView);
+        listView = findViewById(R.id.listViewMarksRequired);
 
         btAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +48,28 @@ public class CreateNewCourseActivity extends AppCompatActivity {
                 }
                 else {
                     courses.add(new Course(getInputCourseName, getInputUnitsOfCredit, getInputMark));
+
+                    Global.totalMarks = Global.totalMarks + getInputMark;
+                    Global.totalCourses = Global.totalCourses + 1;
+                    double wam = Global.totalMarks/Global.totalCourses;
+                    Global.previousWam = Double.toString(wam);
+
+                    System.out.println(Global.totalMarks);
+                    System.out.println(Global.totalCourses);
+                    System.out.println(Global.previousWam);
+
+                    if (wam >= 85) {
+                        Global.grade = "HD";
+                    }
+                    else if (wam >= 75) {
+                        Global.grade = "D";
+                    }
+                    else if (wam >= 65) {
+                        Global.grade = "C";
+                    }
+                    else {
+                        Global.grade = "P";
+                    }
 
                     for (int i = 0; i < courses.size(); i++) {
                         System.out.println(courses.get(i).getName() + courses.get(i).getUoc() + courses.get(i).getMark());

@@ -12,14 +12,15 @@ public class UseExistingWamActivity extends AppCompatActivity {
 
 
     EditText etPreviousWam;
+    EditText etTotalCredits;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_use_existing_wam);
 
-
         etPreviousWam = findViewById(R.id.etPreviousWam);
+        etTotalCredits = findViewById(R.id.etTotalCredits);
 
         Button btAddWam = (Button) findViewById(R.id.btAddWam);
 
@@ -28,8 +29,11 @@ public class UseExistingWamActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Global.previousWam = etPreviousWam.getText().toString();
+                Global.totalCourses = Double.parseDouble(etTotalCredits.getText().toString())/6;
 
                 double wam = Double.parseDouble(Global.previousWam);
+
+                Global.totalMarks = wam * Global.totalCourses;
 
                 if (wam >= 85) {
                     Global.grade = "HD";

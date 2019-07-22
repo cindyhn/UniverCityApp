@@ -6,6 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MyWamActivity">
 
+    <Button
+        android:id="@+id/btGoalWam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="122dp"
+        android:onClick="launchGoalWamScreen"
+        android:text="Goal WAM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btRemoveExistingWam" />
+
+    <TextView
+        android:id="@+id/tvUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:text="--"
+        app:layout_constraintBottom_toBottomOf="@+id/tvWamGrade"
+        app:layout_constraintStart_toEndOf="@+id/tvWamGrade"
+        app:layout_constraintTop_toTopOf="@+id/tvWamGrade" />
+
+    <Button
+        android:id="@+id/btRemoveExistingWam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="122dp"
+        android:text="Remove existing wam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCreateNewCourse" />
+
     <TextView
         android:id="@+id/tvWam"
         android:layout_width="wrap_content"

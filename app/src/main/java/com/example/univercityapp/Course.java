@@ -8,6 +8,11 @@ public class Course {
     public Course() {
     }
 
+    public Course(String name, int mark) {
+        this.name = name;
+        this.mark = mark;
+    }
+
     public Course(String name, int uoc, int mark) {
         this.name = name;
         this.uoc = uoc;

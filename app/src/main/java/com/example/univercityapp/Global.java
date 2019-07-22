@@ -21,6 +21,8 @@ public class Global {
 
     public static String previousWam;
     public static String grade;
-    public static String newWam;
-    public static String totalUOC;
+    public static double totalMarks = 0;
+    public static double totalCourses = 0;
+    public static String goalWam;
+    public static double currentSubjects = 0;
 }

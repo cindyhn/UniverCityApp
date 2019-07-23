@@ -4,147 +4,143 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExplorationActivity">
+    tools:context=".ExplorationActivity"
+    android:background="@color/shelfbrown">
 
     <TextView
-        android:id="@+id/tvExplorationMain"
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:text="Select which major would like to learn more about"
+        android:layout_height="25dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:fontFamily="@font/type_writer"
+        android:inputType="textPersonName"
+        android:text="LIBRARY"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvExplorationMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <TextView
+        android:id="@+id/tvExplorationMain"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Select which major would like to learn more about"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <ImageButton
         android:id="@+id/btExplorationAccounting"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:text="Accounting"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvExplorationMain" />
+        android:layout_width="106dp"
+        android:layout_height="143dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/accounting"
+        app:layout_constraintEnd_toStartOf="@+id/btExplorationFinance"
+        tools:layout_editor_absoluteY="144dp" />
 
-    <Button
-        android:id="@+id/btExplorationHRMgmt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:id="@+id/btExplorationInfs"
+        android:layout_width="111dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="HR Management"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvExplorationMain" />
-
-    <Button
-        android:id="@+id/btExplorationIntlBusiness"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Intl. Business"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btExplorationHRMgmt" />
-
-    <Button
-        android:id="@+id/btExplorationMgmt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Management"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="134dp"
+        android:background="@drawable/infs"
+        app:layout_constraintBottom_toBottomOf="@+id/btExplorationBusinessLaw"
+        app:layout_constraintEnd_toStartOf="@+id/btExplorationBusinessEconomics"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btExplorationIntlBusiness" />
 
-    <Button
+    <ImageButton
+        android:id="@+id/btExplorationIntlBusiness"
+        android:layout_width="112dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ibus"
+        android:text="Intl. Business"
+        app:layout_constraintEnd_toStartOf="@+id/btExplorationAccounting"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <ImageButton
+        android:id="@+id/btExplorationMgmt"
+        android:layout_width="121dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/mgmt"
+        android:text="Management"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toEndOf="@+id/btExplorationBusinessEconomics"
+        app:layout_constraintTop_toBottomOf="@+id/btExplorationFinance"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <ImageButton
         android:id="@+id/btExplorationMarketing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="95dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/marketing"
         android:text="Marketing"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btExplorationMgmt" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/btExplorationRealEstate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Real Estate Studies"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btExplorationMarketing" />
 
-    <Button
-        android:id="@+id/btExplorationTaxation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Taxation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btExplorationRealEstate" />
-
-    <Button
+    <ImageButton
         android:id="@+id/btExplorationBusinessLaw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="86dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/tabl"
         android:text="Business Law"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btExplorationBusinessEconomics" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btExplorationMarketing"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btExplorationBusStrat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Bus. Strat. and Econ. Mgmt."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btExplorationBusinessLaw" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btExplorationFinance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Finance"
+        android:layout_width="102dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/finance"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btExplorationBusStrat" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btExplorationFinancialEconomics"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Financial Economics"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btExplorationFinance" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btExplorationBusinessEconomics"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="104dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="152dp"
+        android:background="@drawable/economics"
         android:text="Business Economics"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btExplorationAccounting" />
+        tools:layout_editor_absoluteY="298dp" />
+
+
 </android.support.constraint.ConstraintLayout>

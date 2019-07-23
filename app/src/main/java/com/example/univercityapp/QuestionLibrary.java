@@ -9,8 +9,8 @@ public class QuestionLibrary {
             "How would you describe your working style?",
             "In a career, you are most interested in what?",
             "When making decisions, what crosses your mind?",
-            "Theoretical concepts or number crunching?",
-            "Regular work routine or unpredictable work day?"
+            "What appeals to you most from the following?",
+            "What do you like in your work day?"
 
 
 
@@ -23,25 +23,25 @@ public class QuestionLibrary {
             {"customer focused", "detail-oriented", "fast-paced", "innovative"},
             {"keeping up with trends in an exciting market", "setting the teams direction", "being able to apply your knowledge across multiple  markets and industries", "self-employment"},
             {"best outcome for yourself", "reviewing and assessing all available information", "the needs of others affected", "researching and analysing a range of information"},
-            {"numbers", "theory", "placeholder", "placeholder"},
-            {"routine", "excitement", "placeholder", "placeholder"},
+            {"numbers", "theory", "real-world application", "design"},
+            {"routine", "excitement", "different environments", "No preference"},
 
 
     };
 
 
-    public String financeAnswers [] = {"analytical","two","dos"};
-    public String businessEconomicsAnswers[] = {"analytical", "economics", "tres"};
-    public String marketingAnswers [] = {"creative", "one", "uno"};
-    public String accountingAnswers [] = {"placeholder", "placeholder", "placeholder"};
-    public String busLawAnswers [] = {"placeholder", "placeholder", "placeholder"};
-    public String busStratAnswers [] = {"placeholder", "placeholder", "placeholder"};
-    public String financialEconomicsAnswers [] = {"placeholder", "placeholder", "placeholder"};
-    public String hrMgmtAnswers [] = {"placeholder", "placeholder", "placeholder"};
-    public String intlBusinessAnswers [] = {"placeholder", "placeholder", "placeholder"};
-    public String mgmtAnswers [] = {"placeholder", "placeholder", "placeholder"};
-    public String realEstateAnswers [] = {"placeholder", "placeholder", "placeholder"};
-    public String taxationAnswers [] = {"placeholder", "placeholder", "placeholder"};
+    public String financeAnswers [] = {"analytical", "banking", "placeholder", "detail-oriented", "keeping up with trends in an exciting market", "reviewing and assessing all available information", "numbers", "routine"};
+    public String businessEconomicsAnswers[] = {"analytical", "economics", "placeholder", "customer focused", "placeholder", "best outcome for yourself", "numbers", "routine"};
+    public String marketingAnswers [] = {"creative", "content creation", "placeholder", "innovative", "being able to apply your knowledge across multiple  markets and industries", "placeholder", "design", "excitement"};
+    public String accountingAnswers [] = {"analytical", "placeholder", "team sports", "detail-oriented", "self-employment", "reviewing and assessing all available information", "numbers", "routine"};
+    public String busLawAnswers [] = {"placeholder", "placeholder", "placeholder", "placeholder", "placeholder", "the needs of others affected", "theory", "routine"};
+    public String busStratAnswers [] = {"placeholder", "economics", "chess", "placeholder", "being able to apply your knowledge across multiple  markets and industries", "best outcome for yourself", "placeholder", "placeholder"};
+    public String financialEconomicsAnswers [] = {"placeholder", "economics", "placeholder", "placeholder", "placeholder", "best outcome for yourself", "placeholder", "placeholder"};
+    public String hrMgmtAnswers [] = {"people person", "placeholder", "placeholder", "placeholder", "setting the teams direction", "the needs of others affected", "real-world application", "excitement"};
+    public String intlBusinessAnswers [] = {"placeholder", "placeholder", "travelling", "fast-paced", "being able to apply your knowledge across multiple  markets and industries", "placeholder", "placeholder", "different environments"};
+    public String mgmtAnswers [] = {"leader", "placeholder", "placeholder", "fast-paced", "setting the teams direction", "the needs of others affected", "real-world application", "excitement"};
+    public String realEstateAnswers [] = {"people person", "real estate", "monopoly", "placeholder", "keeping up with trends in an exciting market", "researching and analysing a range of information", "placeholder", "placeholder"};
+    public String taxationAnswers [] = {"placeholder", "placeholder", "monopoly", "placeholder", "placeholder", "researching and analysing a range of information", "placeholder", "placeholder"};
 
 
 

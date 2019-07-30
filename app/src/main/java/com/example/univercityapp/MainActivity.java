@@ -114,17 +114,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void launchQuizScreen(View v) {
-        Intent myIntent = new Intent(getBaseContext(), QuizActivity.class);
-        startActivity(myIntent);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-    }
 
-    public void launchMajorMapsScreen(View v) {
-        Intent myIntent = new Intent(getBaseContext(), MajorMapsActivity.class);
-        startActivity(myIntent);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-    }
+
 
     public void launchRegistrationScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), RegisterActivity.class);
@@ -138,23 +129,11 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
-    public void launchExplorationScreen(View v) {
-        Intent myIntent = new Intent(getBaseContext(), ExplorationActivity.class);
-        startActivity(myIntent);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-    }
 
-    public void launchMyWamScreen(View v) {
-        Intent myIntent = new Intent(getBaseContext(), MyWamActivity.class);
-        startActivity(myIntent);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-    }
 
-    public void launchHelpScreen(View v) {
-        Intent myIntent = new Intent(getBaseContext(), HelpActivity.class);
-        startActivity(myIntent);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-    }
+
+
+
 }
 
 /* Title: Facebook Login for Android - Quickstart source code

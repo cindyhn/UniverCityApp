@@ -415,7 +415,7 @@ public class QuizActivity extends AppCompatActivity {
        taxationAnswer = questionLibrary.getTaxationAnswers(questionNumber);
 
 
-        if(questionNumber == 8) {
+        if(questionNumber == 7) {
             QuizActivity.this.finish();
             Intent myIntent = new Intent(getBaseContext(), PostQuizActivity.class);
             startActivity(myIntent);

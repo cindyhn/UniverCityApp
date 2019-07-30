@@ -32,9 +32,10 @@
         android:id="@+id/imageView8"
         android:layout_width="198dp"
         android:layout_height="153dp"
-        app:srcCompat="@drawable/corgiStanding"
+        app:srcCompat="@drawable/corgiStand"
         tools:layout_editor_absoluteX="-7dp"
         tools:layout_editor_absoluteY="373dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:contentDescription="Corgi" />
 
 </android.support.constraint.ConstraintLayout>

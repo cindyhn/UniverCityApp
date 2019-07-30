@@ -1,20 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.univercityapp.HomeActivity"
     android:background="@color/grassgreen"
-    android:gravity="center">
+    android:gravity="center"
+    tools:context="com.example.univercityapp.HomeActivity">
+
+    <Button
+        android:id="@+id/btGoToExploration"
+        android:layout_width="108dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="152dp"
+        android:onClick="launchExplorationScreen"
+        android:text="Explore Majors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btGoToHelp" />
+
+    <Button
+        android:id="@+id/btGoToHelp"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="162dp"
+        android:onClick="launchHelpScreen"
+        android:text="Help"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btGoToQuiz"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="162dp"
+        android:onClick="launchQuizScreen"
+        android:text="Quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btGoToMajorMaps2" />
+
+    <Button
+        android:id="@+id/btGoToMajorMaps2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="150dp"
+        android:onClick="launchMajorMapsScreen"
+        android:text="MajorMaps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btWamCalculator" />
+
+    <Button
+        android:id="@+id/btWamCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="162dp"
+        android:onClick="launchMyWamScreen"
+        android:text="My Wam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/welcome_user"
         android:textColor="#123456"
         android:textSize="23sp"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="227dp" />
-</LinearLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

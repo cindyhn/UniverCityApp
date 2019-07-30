@@ -2,57 +2,42 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/whalesmol">
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="41dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Flash Cards"
-        android:textAlignment="center"
-        android:textColor="@color/SplashColor"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@drawable/landingbg">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="220dp"
-        android:layout_height="189dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="53dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="67dp"
-        android:paddingBottom="20dp"
-        android:src="@drawable/flashcards"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:id="@+id/imageView11"
+        android:layout_width="198dp"
+        android:layout_height="153dp"
+        app:srcCompat="@drawable/corgiStanding"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="374dp" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="58dp"
-        android:fontFamily="@font/montserrat"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:text="@string/onboardflash"
+        android:id="@+id/textView16"
+        android:layout_width="389dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/scrollbg"
+        android:fontFamily="@font/type_writer"
+        android:lineSpacingMultiplier="1.75"
+        android:paddingLeft="20pt"
+        android:paddingTop="23pt"
+        android:paddingRight="20pt"
+        android:text="@string/introText2"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
+
+
+

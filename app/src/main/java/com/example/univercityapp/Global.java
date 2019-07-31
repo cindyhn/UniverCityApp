@@ -19,8 +19,8 @@ public class Global {
 
 
 
-    public static String previousWam;
-    public static String grade;
+    public static String previousWam = "0.0";
+    public static String grade = "--";
     public static double totalMarks = 0;
     public static double totalCourses = 0;
     public static String goalWam;

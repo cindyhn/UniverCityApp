@@ -13,6 +13,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTotalCredits" />
 
@@ -21,10 +22,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="311dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="149dp"
         android:text="Use existing WAM"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -80,6 +82,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="62dp"
         android:ems="10"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toStartOf="@+id/etTotalCredits"
         app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,12 +92,21 @@
         android:id="@+id/btAddWam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="162dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="106dp"
         android:text="Add Wam"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTotalCredits" />
+
+    <Button
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:onClick="launchMyWamScreen"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="@+id/btAddWam"
+        app:layout_constraintEnd_toStartOf="@+id/btAddWam"
+        app:layout_constraintTop_toTopOf="@+id/btAddWam" />
 
 </android.support.constraint.ConstraintLayout>

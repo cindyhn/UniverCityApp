@@ -3,6 +3,8 @@ package com.example.univercityapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,6 +15,7 @@ public class UseExistingWamActivity extends AppCompatActivity {
 
     EditText etPreviousWam;
     EditText etTotalCredits;
+    Button btBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +23,13 @@ public class UseExistingWamActivity extends AppCompatActivity {
         setContentView(R.layout.activity_use_existing_wam);
 
         etPreviousWam = findViewById(R.id.etPreviousWam);
+//        etPreviousWam.setFilters(new InputFilter[]{ new MinMaxFilter("1", "100")});
+
         etTotalCredits = findViewById(R.id.etTotalCredits);
+        etTotalCredits.setFilters(new InputFilter[]{ new MinMaxFilter("0", "1000")});
 
         Button btAddWam = (Button) findViewById(R.id.btAddWam);
+        Button btBack = (Button) findViewById(R.id.btBack);
 
         btAddWam.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +64,11 @@ public class UseExistingWamActivity extends AppCompatActivity {
             }
         });
 
+    }
 
+    public void launchMyWamScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), MyWamActivity.class);
+        startActivity(myIntent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 }

@@ -33,7 +33,7 @@ public class MyWamActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Global.previousWam = "0";
+                Global.previousWam = "0.0";
                 Global.grade = "--";
                 Global.totalMarks = 0;
                 Global.totalCourses = 0;
@@ -43,8 +43,8 @@ public class MyWamActivity extends AppCompatActivity {
                 System.out.println(wam);
                 System.out.println(Global.grade);
 
-                tvWam.setText(Global.previousWam);
-                tvWamGrade.setText(Global.grade);
+                tvWam.setText("Wam: " + Global.previousWam);
+                tvWamGrade.setText("Grade: " + Global.grade);
                 tvUnits.setText("Units: " + (Global.totalCourses * 6));
             }
         });}

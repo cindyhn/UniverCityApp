@@ -32,16 +32,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAddCourse" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAddCourseMark" />
 
     <TextView
-        android:id="@+id/tvAddCourse"
+        android:id="@+id/tvAddCourseMark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="168dp"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="169dp"
-        android:text="Add Course"
+        android:text="Add Course Mark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -65,10 +65,12 @@
         android:id="@+id/btCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginTop="63dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="37dp"
         android:onClick="launchMyWamScreen"
         android:text="Cancel"
+        app:layout_constraintEnd_toStartOf="@+id/btAdd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etMark" />
 
@@ -76,11 +78,11 @@
         android:id="@+id/btAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="51dp"
         android:text="Add"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btMyWam"
         app:layout_constraintStart_toEndOf="@+id/btCancel"
         app:layout_constraintTop_toBottomOf="@+id/etMark" />
 
@@ -94,4 +96,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btCancel" />
+
+    <Button
+        android:id="@+id/btMyWam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="launchMyWamScreen"
+        android:text="My Wam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btAdd"
+        app:layout_constraintTop_toBottomOf="@+id/etMark" />
 </android.support.constraint.ConstraintLayout>

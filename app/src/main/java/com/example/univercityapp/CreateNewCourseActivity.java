@@ -3,6 +3,7 @@ package com.example.univercityapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -32,6 +33,12 @@ public class CreateNewCourseActivity extends AppCompatActivity {
         etUnitsOfCredit = findViewById(R.id.etUnitsOfCredit);
         etMark = findViewById(R.id.etMark);
         listView = findViewById(R.id.listViewMarksRequired);
+
+        etUnitsOfCredit = findViewById(R.id.etUnitsOfCredit);
+        etUnitsOfCredit.setFilters(new InputFilter[]{ new MinMaxFilter("0", "1000")});
+
+        etMark = findViewById(R.id.etMark);
+        etMark.setFilters(new InputFilter[]{ new MinMaxFilter("0", "100")});
 
         btAdd.setOnClickListener(new View.OnClickListener() {
             @Override

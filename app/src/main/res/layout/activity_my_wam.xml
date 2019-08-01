@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btCreateNewCourse" />
+        app:layout_constraintTop_toBottomOf="@+id/btAddCourseMark" />
 
     <TextView
         android:id="@+id/tvWam"
@@ -91,14 +91,14 @@
         app:layout_constraintTop_toBottomOf="@+id/tvWamGrade" />
 
     <Button
-        android:id="@+id/btCreateNewCourse"
+        android:id="@+id/btAddCourseMark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="122dp"
         android:onClick="launchCreateNewCourseScreen"
-        android:text="Create new course"
+        android:text="Add course mark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btUseExistingWam" />

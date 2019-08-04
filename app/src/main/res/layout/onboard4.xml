@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/landingbg">
+    android:background="@drawable/univercityhome">
 
     <ImageView
         android:id="@+id/imageView9"
@@ -23,7 +23,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/scrollbg"
-        android:fontFamily="@font/type_writer"
+        android:fontFamily="@font/VCR_OSD_MONO_1"
         android:lineSpacingMultiplier="1.75"
         android:paddingLeft="20pt"
         android:paddingTop="23pt"

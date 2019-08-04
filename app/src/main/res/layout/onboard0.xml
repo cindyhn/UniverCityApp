@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/landingbg">
+    android:background="@drawable/univercityhome">
 
     <TextView
         android:id="@+id/textView2"
@@ -14,7 +14,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/scrollbg"
-        android:fontFamily="@font/type_writer"
+        android:fontFamily="@font/VCR_OSD_MONO_1"
         android:text="@string/introText"
         android:textAlignment="center"
         android:textColor="@android:color/black"

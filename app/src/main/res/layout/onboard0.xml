@@ -14,7 +14,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/scrollbg"
-        android:fontFamily="@font/VCR_OSD_MONO_1"
+        android:fontFamily="@font/vcr"
         android:text="@string/introText"
         android:textAlignment="center"
         android:textColor="@android:color/black"

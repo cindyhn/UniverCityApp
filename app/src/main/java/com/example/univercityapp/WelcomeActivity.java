@@ -17,6 +17,8 @@ public class WelcomeActivity extends AppCompatActivity {
             public void run() {
                 Intent startActivity = new Intent(WelcomeActivity.this, MainActivity.class);
                 startActivity(startActivity);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+
                 finish();
             }
         }, 4000);

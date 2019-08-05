@@ -42,6 +42,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent registerIntent = new Intent(LoginActivity.this,RegisterActivity.class);
                 startActivity(registerIntent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
 
@@ -55,6 +56,8 @@ public class LoginActivity extends AppCompatActivity {
                 {
                     Intent HomePage = new Intent(LoginActivity.this,HomeActivity.class);
                     startActivity(HomePage);
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+
                 }
                 else
                 {

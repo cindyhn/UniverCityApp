@@ -19,7 +19,7 @@ public class WelcomeActivity extends AppCompatActivity {
                 startActivity(startActivity);
                 finish();
             }
-        }, 3000);
+        }, 4000);
 
 
     }

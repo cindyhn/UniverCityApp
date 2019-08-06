@@ -11,15 +11,12 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="already_registered">Already Registered?</string>
     <string name="welcome_user">Welcome User</string>
-    <string name = "introText">Hi there, were excited youre here! UniverCity might feel a bit daunting right now, but we promise by the end youll have some great memories... </string>
-    <string name = "introText2">To help hit the ground running, weve put together a few useful resources...</string>
-    <string name = "introText3">Major Recommendation quiz</string>
-    <string name = "introText4">Progression Planner</string>
-    <string name = "introText5">WAM Calculator</string>
-    <string name = "introText6">Major Exploration Page</string>
-
-
-
+    <string name="introText">Hi there, were excited youre here! UniverCity might feel a bit daunting right now, but we promise by the end youll have some great memories... </string>
+    <string name="introText2">To help hit the ground running, weve put together a few useful resources...</string>
+    <string name="introText3">Major Recommendation quiz</string>
+    <string name="introText4">Progression Planner</string>
+    <string name="introText5">WAM Calculator</string>
+    <string name="introText6">Major Exploration Page</string>
 
 
     <string name="todo">TODO</string>

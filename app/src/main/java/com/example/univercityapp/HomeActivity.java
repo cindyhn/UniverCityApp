@@ -42,4 +42,10 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(myIntent);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
+
+    public void launchProgressionScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), ProgressionActivity.class);
+        startActivity(myIntent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
 }

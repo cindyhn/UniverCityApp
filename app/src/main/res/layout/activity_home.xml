@@ -9,75 +9,132 @@
     android:gravity="center"
     tools:context="com.example.univercityapp.HomeActivity">
 
-    <Button
+    <ImageButton
         android:id="@+id/btGoToExploration"
-        android:layout_width="108dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="129dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="164dp"
         android:layout_marginEnd="152dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/library"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchExplorationScreen"
         android:text="Explore Majors"
+        app:layout_constraintBottom_toTopOf="@+id/btGoToQuiz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btGoToHelp" />
+        app:layout_constraintTop_toBottomOf="@+id/btGoToHelp"
+        app:layout_constraintVertical_bias="0.085" />
 
     <Button
         android:id="@+id/btGoToQuiz"
         android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="56dp"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchQuizScreen"
         android:text="Quiz"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btGoToMajorMaps2" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btGoToMajorMaps2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="152dp"
         android:layout_marginStart="240dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/school"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchMajorMapsScreen"
         android:text="MajorMaps"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btWamCalculator" />
+        app:layout_constraintTop_toBottomOf="@+id/btWamCalculator"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btWamCalculator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="129dp"
+        android:layout_height="105dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="190dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/hospital"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchMyWamScreen"
         android:text="My Wam"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.974"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btGoToHelp"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="162dp"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="404dp"
+        android:background="@android:drawable/ic_menu_help"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchHelpScreen"
         android:text="Help"
+        app:layout_constraintBottom_toTopOf="@+id/btGoToQuiz"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btGoToQuiz" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btGoToHome"
+        android:layout_width="122dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/home"
+        android:fontFamily="@font/rainyhearts"
+        android:onClick="launchHelpScreen"
+        android:text="Help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btGoToMajorMaps2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="143dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/coming" />
 
 </android.support.constraint.ConstraintLayout>

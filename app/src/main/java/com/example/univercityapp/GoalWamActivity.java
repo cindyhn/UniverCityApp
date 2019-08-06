@@ -40,6 +40,8 @@ public class GoalWamActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String getInputCurrentSubject = etCurrentSubjects.getText().toString();
 
+                etCurrentSubjects.getText().clear();
+
 
                 if (addArray.contains(getInputCurrentSubject)) {
                     Toast.makeText(getBaseContext(), "Item Already Added To The Array", Toast.LENGTH_LONG).show();

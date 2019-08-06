@@ -27,9 +27,161 @@
         android:fontFamily="@font/type_writer"
         android:text="FAQs"
         android:textAlignment="center"
+        android:textStyle="bold"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/FAQ1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:gravity="center_horizontal"
+        android:text="How many courses per year counts as a full time load?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/type_writer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHelpMain" />
+
+    <TextView
+        android:id="@+id/FAQ1Ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:text="In trimesters, a minimum of 6 courses over three trimesters count as a full time load."
+        android:textSize="12sp"
+        app:fontFamily="@font/type_writer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FAQ1" />
+
+    <TextView
+        android:id="@+id/FAQ2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:gravity="center_horizontal"
+        android:text="Will UNSW3+ delay my graduation ceremony?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/type_writer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FAQ1Ans" />
+
+    <TextView
+        android:id="@+id/FAQ2Ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:text="The UNSW3+ academic calendar will allow for three graduation periods per year. T1+2: 13 weeks after last exam. T3: 20 weeks from last exam"
+        android:textSize="12sp"
+        app:fontFamily="@font/type_writer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FAQ2" />
+
+    <TextView
+        android:id="@+id/FAQ3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:gravity="center_horizontal"
+        android:text="How does exam period work?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/type_writer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FAQ2Ans" />
+
+    <TextView
+        android:id="@+id/FAQ3Ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:text="After the completion of Week 10, study vacation and any makeup classes are included within the four days of Week 11. There will then be a two week exam period"
+        android:textSize="12sp"
+        app:fontFamily="@font/type_writer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FAQ3" />
+
+    <TextView
+        android:id="@+id/FAQ4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:gravity="center_horizontal"
+        android:text="How do enrolments work?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/type_writer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FAQ3Ans" />
+
+    <TextView
+        android:id="@+id/FAQ4Ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:text="Enrolments are now split into two parts. Annual enrolment will allow students to select classes for the following year, and termly enrolments allow students to select their class timeslots."
+        android:textSize="12sp"
+        app:fontFamily="@font/type_writer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FAQ4" />
+
+    <TextView
+        android:id="@+id/FAQ5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:gravity="center_horizontal"
+        android:text="Further Questions?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/type_writer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FAQ4Ans" />
+
+    <TextView
+        android:id="@+id/FAQ5Ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:text="If you have any questions, please submit them via www.unsw.to/contactus"
+        android:textSize="12sp"
+        app:fontFamily="@font/type_writer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FAQ5" />
+
 </android.support.constraint.ConstraintLayout>

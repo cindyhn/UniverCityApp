@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".CreateNewCourseActivity">
 
+    <ImageButton
+        android:id="@+id/ibGoToMyWam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="launchMyWamScreen"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
     <EditText
         android:id="@+id/etMark"
         android:layout_width="wrap_content"
@@ -21,14 +32,14 @@
         app:layout_constraintTop_toBottomOf="@+id/etUnitsOfCredit" />
 
     <EditText
-        android:id="@+id/etCourseName"
+        android:id="@+id/etCourseCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="99dp"
         android:layout_marginTop="67dp"
         android:layout_marginEnd="99dp"
         android:ems="10"
-        android:hint="Course Name"
+        android:hint="Course Code"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCourseName" />
+        app:layout_constraintTop_toBottomOf="@+id/etCourseCode" />
 
     <Button
         android:id="@+id/btCancel"

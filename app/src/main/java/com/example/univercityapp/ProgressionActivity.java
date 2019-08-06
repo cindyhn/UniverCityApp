@@ -1,11 +1,13 @@
 package com.example.univercityapp;
 
+import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -48,6 +50,12 @@ public class ProgressionActivity extends AppCompatActivity {
 //    public ActionBar getSupportActionBar() {
 //        return super.getSupportActionBar();
 //    }
+    }
+
+    public void launchHomeScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), HomeActivity.class);
+        startActivity(myIntent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
 }

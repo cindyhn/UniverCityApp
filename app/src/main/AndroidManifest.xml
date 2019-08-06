@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GoalWamActivity"></activity>
+        <activity android:name=".ProgressionActivity"></activity>
+        <activity android:name=".GoalWamActivity" />
         <activity android:name=".CreateNewCourseActivity" />
         <activity android:name=".HelpActivity" />
         <activity android:name=".MyWamActivity" />

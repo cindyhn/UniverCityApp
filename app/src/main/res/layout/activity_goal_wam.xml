@@ -64,7 +64,7 @@
         android:layout_marginStart="115dp"
         android:layout_marginTop="26dp"
         android:layout_marginEnd="115dp"
-        android:text="Add Current Subject"
+        android:text="Add Current lecture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etCurrentSubjects" />
@@ -87,7 +87,7 @@
         android:layout_marginStart="176dp"
         android:layout_marginTop="46dp"
         android:layout_marginEnd="176dp"
-        android:text="Average mark required per current subject"
+        android:text="Average mark required per current lecture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listView" />

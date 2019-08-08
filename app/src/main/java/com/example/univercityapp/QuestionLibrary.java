@@ -10,7 +10,7 @@ public class QuestionLibrary {
             "In a career, you are most interested in what?",
             "When making decisions, what crosses your mind?",
             "What appeals to you most from the following?",
-            "What do you like in your work day?"
+           "What do you like in your work day?"
 
 
 
@@ -24,7 +24,7 @@ public class QuestionLibrary {
             {"keeping up with trends in an exciting market", "setting the teams direction", "being able to apply your knowledge across multiple  markets and industries", "self-employment"},
             {"best outcome for yourself", "reviewing and assessing all available information", "the needs of others affected", "researching and analysing a range of information"},
             {"numbers", "theory", "real-world application", "design"},
-            {"routine", "excitement", "different environments", "No preference"},
+            {"routine", "excitement", "different environments", "No preference"}
 
 
     };

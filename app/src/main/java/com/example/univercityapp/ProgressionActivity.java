@@ -14,8 +14,8 @@ import java.util.ArrayList;
 public class ProgressionActivity extends AppCompatActivity {
 
 
-    private ArrayList<Integer> week = new ArrayList<>();
-    private ArrayList<Integer> date = new ArrayList<>();
+    private ArrayList<String> week = new ArrayList<>();
+    private ArrayList<String> date = new ArrayList<>();
     private ArrayList<String> month = new ArrayList<>();
     private ArrayList<String> lecture = new ArrayList<>();
     private ArrayList<String> lab = new ArrayList<>();

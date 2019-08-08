@@ -12,7 +12,7 @@ public class QuizActivity extends AppCompatActivity {
     public QuestionLibrary questionLibrary = new QuestionLibrary();
 
 
-    public TextView tvQuizQuestion;
+    public TextView tvQuizQuestion, tvQuizCount, tvQuizCounter;
     public Button btQuizAnswer1;
     public Button btQuizAnswer2;
     public Button btQuizAnswer3;
@@ -33,6 +33,7 @@ public class QuizActivity extends AppCompatActivity {
     public String taxationAnswer;
 
 
+    public int questionCounter = 1;
 
     public int questionNumber = 0;
 
@@ -48,7 +49,13 @@ public class QuizActivity extends AppCompatActivity {
         btQuizAnswer3 = findViewById(R.id.btQuizAnswer3);
         btQuizAnswer4 = findViewById(R.id.btQuizAnswer4);
 
+       tvQuizCount = findViewById(R.id.tvQuizCount);
+       tvQuizCounter = findViewById(R.id.tvQuizCounter);
+
+
         updateQuestion();
+
+
 
         btQuizAnswer1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,6 +135,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
                 updateQuestion();
+        //        tvQuizCount.setText(questionNumber);
 
 
             }
@@ -213,6 +221,7 @@ public class QuizActivity extends AppCompatActivity {
                 }
 
                 updateQuestion();
+         //       tvQuizCount.setText(questionNumber);
 
 
             }
@@ -297,7 +306,9 @@ public class QuizActivity extends AppCompatActivity {
 
                 }
 
+
                 updateQuestion();
+         //       tvQuizCount.setText(questionNumber);
 
 
             }
@@ -383,6 +394,7 @@ public class QuizActivity extends AppCompatActivity {
                 }
 
                 updateQuestion();
+            //    tvQuizCount.setText(questionNumber);
 
 
             }
@@ -395,7 +407,9 @@ public class QuizActivity extends AppCompatActivity {
 
 
 
+
     public void updateQuestion() {
+        tvQuizCount.setText(Integer.toString(questionCounter));
         tvQuizQuestion.setText(questionLibrary.getQuestion(questionNumber));
         btQuizAnswer1.setText(questionLibrary.getChoice1(questionNumber));
         btQuizAnswer2.setText(questionLibrary.getChoice2(questionNumber));
@@ -414,13 +428,21 @@ public class QuizActivity extends AppCompatActivity {
        realEstateAnswer = questionLibrary.getRealEstateAnswers(questionNumber);
        taxationAnswer = questionLibrary.getTaxationAnswers(questionNumber);
 
+        if(questionNumber < 7) {
+            questionCounter++;
+        }
 
         if(questionNumber == 7) {
             QuizActivity.this.finish();
             Intent myIntent = new Intent(getBaseContext(), PostQuizActivity.class);
             startActivity(myIntent);
         }
+
+
+
         questionNumber++;
+
+       // tvQuizCount.setText(questionCounter);
 
     }
 
@@ -428,10 +450,10 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-    public void launchPostQuizScreen(View v) {
-        Intent myIntent = new Intent(getBaseContext(), PostQuizActivity.class);
-        startActivity(myIntent);
-    }
+//    public void launchPostQuizScreen(View v) {
+//        Intent myIntent = new Intent(getBaseContext(), PostQuizActivity.class);
+//        startActivity(myIntent);
+//    }
 
     public void launchHomeScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), HomeActivity.class);

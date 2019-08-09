@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         callbackManager = CallbackManager.Factory.create();
 
         imgAvatar = findViewById(R.id.avatar);

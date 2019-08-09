@@ -7,6 +7,7 @@ import android.view.View;
 import android.app.ProgressDialog;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.ImageView;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -33,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
     ProgressDialog mDialog;
     ImageView imgAvatar;
 
+    Button button2;
+    Button button3;
+    Button button7;
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -43,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        button2 = findViewById(R.id.button2);
+        button3 = findViewById(R.id.button3);
+        button7 = findViewById(R.id.button7);
 
 
         callbackManager = CallbackManager.Factory.create();
@@ -74,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
                 parameters.putString("fields", "id,email,birthday,friends");
                 request.setParameters(parameters);
                 request.executeAsync();
+
+                button2.setVisibility(View.INVISIBLE);
+                button3.setVisibility(View.INVISIBLE);
+                button7.setVisibility(View.VISIBLE);
 
             }
 
@@ -126,6 +139,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchLoginScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), LoginActivity.class);
+        startActivity(myIntent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
+
+    public void launchHomeScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), HomeActivity.class);
         startActivity(myIntent);
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }

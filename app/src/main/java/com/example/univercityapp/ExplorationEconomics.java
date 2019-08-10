@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class ExplorationAccounting extends AppCompatActivity {
+public class ExplorationEconomics extends AppCompatActivity {
 
     private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exploration_accounting);
+        setContentView(R.layout.activity_exploration_economics);
 
         webView = findViewById(R.id.myWebView);
         webView.setWebViewClient(new WebViewClient());
@@ -24,7 +24,7 @@ public class ExplorationAccounting extends AppCompatActivity {
     }
 
     public void onBackPressed() {
-        Intent intent = new Intent(this, ExplorationActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);

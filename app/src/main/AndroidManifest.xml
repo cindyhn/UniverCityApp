@@ -35,6 +35,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".QuizActivity" />
+        <activity android:name=".ExplorationAccounting" />
+
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

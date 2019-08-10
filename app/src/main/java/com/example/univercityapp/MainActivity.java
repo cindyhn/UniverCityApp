@@ -124,13 +124,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
-
-
-
-
-
-
     public void launchRegistrationScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), RegisterActivity.class);
         startActivity(myIntent);

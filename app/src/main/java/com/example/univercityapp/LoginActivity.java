@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                 Boolean res = db.checkUser(user, pwd);
                 if(res == true)
                 {
-                    Intent HomePage = new Intent(LoginActivity.this,HomeActivity.class);
+                    Intent HomePage = new Intent(LoginActivity.this,OnboardingActivity.class);
                     startActivity(HomePage);
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 

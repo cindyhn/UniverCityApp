@@ -133,7 +133,7 @@ public class OnboardingActivity extends AppCompatActivity {
     //Intent to main activity
     private void startMainActivity(){
         setFirstTimeStartStatus(false);
-        startActivity(new Intent(OnboardingActivity.this, MainActivity.class));
+        startActivity(new Intent(OnboardingActivity.this, HomeActivity.class));
         finish();
     }
 

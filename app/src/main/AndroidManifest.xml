@@ -43,6 +43,7 @@
         <activity android:name=".ExplorationManagement" />
         <activity android:name=".ExplorationMarketing" />
         <activity android:name=".ExplorationInfs" />
+        <activity android:name=".OnboardingActivity"/>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

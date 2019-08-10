@@ -1,8 +1,6 @@
 package com.example.univercityapp;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -29,12 +27,6 @@ public class OnboardingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        //If statement to skip onboarding screens if app has been launched before
-        if(!isFirstTimeStartApp()) {
-            startMainActivity();
-            finish();
-        }
 
         setNotifBarTrans();
         setContentView(R.layout.onboard_activity);
@@ -99,20 +91,6 @@ public class OnboardingActivity extends AppCompatActivity {
         setDotStatus(0);
     }
 
-    //Method which checks if app has been opened before and returns boolean value
-    private boolean isFirstTimeStartApp() {
-        SharedPreferences ref = getApplicationContext().getSharedPreferences("IntroSliderApp", Context.MODE_PRIVATE);
-        return ref.getBoolean("FirstTimeStartFlag", true);
-    }
-
-    //Method which saves if app has been opened before into SharedPreferences
-    private void setFirstTimeStartStatus(boolean value) {
-        SharedPreferences ref = getApplicationContext().getSharedPreferences("IntroSliderApp", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = ref.edit();
-        editor.putBoolean("FirstTimeStartFlag", value);
-        editor.commit();
-    }
-
     //Set dots at bottom to change when you cycle through pages
     private void setDotStatus(int page){
         layoutDot.removeAllViews();
@@ -132,7 +110,6 @@ public class OnboardingActivity extends AppCompatActivity {
 
     //Intent to main activity
     private void startMainActivity(){
-        setFirstTimeStartStatus(false);
         startActivity(new Intent(OnboardingActivity.this, HomeActivity.class));
         finish();
     }

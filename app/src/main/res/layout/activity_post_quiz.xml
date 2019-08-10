@@ -19,14 +19,42 @@
         app:srcCompat="@drawable/scrollbg" />
 
     <TextView
+        android:id="@+id/textview_learnmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/vcr"
+        android:paddingLeft="10dp"
+        android:text="Learn More"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvPostQuizRecommendation" />
+
+    <ImageButton
+        android:id="@+id/ibGoToHome"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="54dp"
+        android:background="#00FFFFFF"
+        android:onClick="launchHomeScreen"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <TextView
         android:id="@+id/tvPostQuizText"
         android:layout_width="289dp"
         android:layout_height="78dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="192dp"
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="532dp"
-        android:fontFamily="@font/type_writer"
+        android:fontFamily="@font/vcr"
         android:lineSpacingExtra="8sp"
         android:text="We believe the right major for you, based on your answers is:"
         android:textAlignment="center"
@@ -36,33 +64,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.014" />
 
     <TextView
         android:id="@+id/tvPostQuizRecommendation"
-        android:layout_width="176dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="433dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="316dp"
         android:fontFamily="@font/type_writer"
         android:text="placeholder"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPostQuizText" />
-
-    <ImageButton
-        android:id="@+id/ibGoToHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="8dp"
-        android:onClick="launchHomeScreen"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/tvPostQuizRecommendation"
-        app:srcCompat="?attr/homeAsUpIndicator" />
 
 </android.support.constraint.ConstraintLayout>

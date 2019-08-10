@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -14,12 +16,21 @@ public class PostQuizActivity extends AppCompatActivity {
     //    public String recommendedMajor = " ";
     public TextView tvPostQuizText, tvPostQuizRecommendation;
 
+    TextView mTextViewLearnMore;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_quiz);
 
-
+        mTextViewLearnMore = (TextView)findViewById(R.id.textview_learnmore);
+        mTextViewLearnMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent learnMoreIntent = new Intent(PostQuizActivity.this,ExplorationActivity.class);
+                startActivity(learnMoreIntent);
+            }
+        });
 
 
         tvPostQuizRecommendation = findViewById(R.id.tvPostQuizRecommendation);

@@ -5,22 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/landingbg"
-    tools:context=".QuizActivity">
+    tools:context="com.example.univercityapp.QuizActivity">
 
 
-    <ImageButton
-        android:id="@+id/ibGoToHome2"
-        android:layout_width="wrap_content"
-        android:layout_height="43dp"
-        android:onClick="launchHomeScreen"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator" />
-        <!--app:layout_constraintEnd_toEndOf="@+id/imageView2"-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        app:srcCompat="@drawable/scrollbg"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <!--app:layout_constraintEnd_toEndOf="@+id/imageView2"-->
         <!--app:layout_constraintHorizontal_bias="0.0"-->
         <!--app:layout_constraintStart_toStartOf="@+id/imageView2"-->
         <!--app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"-->
 
+
+    <ImageButton
+        android:id="@+id/ibGoToHome9"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:background="#00FFFFFF"
+        android:onClick="launchHomeScreen"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
+        app:srcCompat="?attr/homeAsUpIndicator" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -40,42 +52,30 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="395dp"
-                android:layout_height="715dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/scrollbg" />
-
 
             <TextView
                 android:id="@+id/tvQuizQuestion"
                 android:layout_width="263dp"
                 android:layout_height="70dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="487dp"
-                android:fontFamily="@font/type_writer"
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="452dp"
+                android:fontFamily="@font/vcr"
                 android:text="People see me as"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView2"
-                app:layout_constraintVertical_bias="0.886" />
+                app:layout_constraintTop_toBottomOf="@+id/tvQuizCounter" />
 
             <Button
                 android:id="@+id/btQuizAnswer1"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginTop="64dp"
+                android:layout_marginTop="32dp"
                 android:fontFamily="@font/rainyhearts"
                 android:text="Button"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/rainyhearts"
                 android:text="Button"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
@@ -100,7 +100,7 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/rainyhearts"
                 android:text="Button"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +114,7 @@
                 android:layout_marginBottom="100dp"
                 android:fontFamily="@font/rainyhearts"
                 android:text="Button"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
@@ -126,30 +126,26 @@
                 android:id="@+id/tvQuizCounter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="128dp"
+                android:fontFamily="@font/vcr"
                 android:text="Q"
                 android:textSize="24sp"
                 android:visibility="visible"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.461"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:visibility="visible" />
 
             <TextView
                 android:id="@+id/tvQuizCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/vcr"
                 android:text="0"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4" />
+                app:layout_constraintBottom_toBottomOf="@+id/tvQuizCounter"
+                app:layout_constraintStart_toEndOf="@+id/tvQuizCounter"
+                app:layout_constraintTop_toTopOf="@+id/tvQuizCounter" />
 
         </android.support.constraint.ConstraintLayout>
     </LinearLayout>

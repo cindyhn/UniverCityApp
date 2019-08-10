@@ -81,4 +81,10 @@ public class LoginActivity extends AppCompatActivity {
         viewGroup.removeView(progressView);
         isProgressShowing = false;
     }
+
+    public void launchMainScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), MainActivity.class);
+        startActivity(myIntent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
 }

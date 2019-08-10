@@ -65,5 +65,11 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void launchMainScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), MainActivity.class);
+        startActivity(myIntent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
 }
 

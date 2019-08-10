@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Offerings {
 
-    private int week;
-    private int date;
+    private String week;
+    private String date;
     private String month;
     private String lecture;
     private String lab;
@@ -13,7 +13,7 @@ public class Offerings {
     public Offerings() {
     }
 
-    public Offerings(int week, int date, String month, String lecture, String lab) {
+    public Offerings(String week, String date, String month, String lecture, String lab) {
         this.week = week;
         this.date = date;
         this.month = month;
@@ -21,19 +21,19 @@ public class Offerings {
         this.lab = lab;
     }
 
-    public int getWeek() {
+    public String getWeek() {
         return week;
     }
 
-    public void setWeek(int week) {
+    public void setWeek(String week) {
         this.week = week;
     }
 
-    public int getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -59,16 +59,33 @@ public class Offerings {
 
     public static ArrayList<Offerings> getOfferings() {
         ArrayList<Offerings> offerings = new ArrayList<>();
-        offerings.add(new Offerings(1, 18, "February", "Introduction & Android Fundamentals", "Android Studio, Git & App basics"));
-        offerings.add(new Offerings(2, 25, "Februrary", "Activities, Lifecycle & Intents", "Activities & Intents"));
-        offerings.add(new Offerings(3, 4, "March", "Layouts & UI", "Designing a UI"));
-        offerings.add(new Offerings(4, 11, "March", "Lists & Adapters", "Displaying Items in a List"));
-        offerings.add(new Offerings(5, 18, "March", "Fragments & Multi-layout Apps", "Fragments for Multi-layout Apps"));
-        offerings.add(new Offerings(6, 25, "March", "APIs, Permissions & Libraries", "APIs & JSON"));
-        offerings.add(new Offerings(7, 1, "April", "Networking", "Networking"));
-        offerings.add(new Offerings(8, 8, "April", "Threads & Async Tasks", "Async Tasks"));
-        offerings.add(new Offerings(9, 15, "April", "Data Saving", "Database"));
-        offerings.add(new Offerings(10, 22, "April", "Outlook & Course Summary", "Revision"));
+        offerings.add(new Offerings("INFS1602", "Digital Transformation in Business", "", "none", "T1, T2, T3"));
+        offerings.add(new Offerings("INFS1603", "Introduction to Business Databases", "", "none", "T1, T2"));
+        offerings.add(new Offerings("INFS1609", "Fundamentals of Business Programming", "", "none", "T1, T3"));
+        offerings.add(new Offerings("INFS2603", "Business Analysis", "", "INFS1602 & INFS1603", "T3"));
+        offerings.add(new Offerings("INFS2605", "Intermediate Business Programming", "", "INFS1603 AND INFS1609", "U1C, T1, T3"));
+        offerings.add(new Offerings("INFS2608", "Database Management and Big Data Infrastructures", "", "INFS1603", "T1"));
+        offerings.add(new Offerings("INFS2621", "Enterprise Systems", "", "INFS1602", "T2"));
+        offerings.add(new Offerings("INFS3603", "Introduction to Business Analytics", "", "INFS1602 AND 72 UoC", "T1, T2"));
+        offerings.add(new Offerings("INFS3604", "Business Process Management", "", "INFS2603 AND 72 UoC", "T3"));
+        offerings.add(new Offerings("INFS3605", "Information Systems Innovation and Managememt", "", "INFS3634  AND 72 UoC", "T1, T2"));
+        offerings.add(new Offerings("INFS3617", "Networking and Cyber Security", "", "INFS1602 AND 72 UoC", "T1"));
+        offerings.add(new Offerings("INFS3634", "Mobile Applications Development", "", "INFS2605 AND 72 UoC", "T1, T3"));
+
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("", "", "", "",""));
+
 
 
         return offerings;

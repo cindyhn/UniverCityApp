@@ -67,4 +67,10 @@ public class MyWamActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
+    public void launchHomeScreen(View v) {
+        Intent myIntent = new Intent(getBaseContext(), HomeActivity.class);
+        startActivity(myIntent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
+
 }

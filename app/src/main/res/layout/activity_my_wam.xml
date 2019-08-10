@@ -4,22 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/saveyourwam"
     tools:context=".MyWamActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="207dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/heart"
+        app:layout_constraintBottom_toTopOf="@+id/btUseExistingWam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
+
+    <ImageButton
+        android:id="@+id/ibGoToHome4"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="54dp"
+        android:background="#00FFFFFF"
+        android:onClick="launchHomeScreen"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
+        app:srcCompat="?attr/homeAsUpIndicator" />
 
     <Button
         android:id="@+id/btGoalWam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="122dp"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchGoalWamScreen"
         android:text="Goal WAM"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btRemoveExistingWam" />
+
+    <Button
+        android:id="@+id/btRemoveExistingWam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="122dp"
+        android:fontFamily="@font/rainyhearts"
+        android:text="Remove existing wam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAddCourseMark" />
 
     <TextView
         android:id="@+id/tvUnits"
@@ -31,20 +71,6 @@
         app:layout_constraintStart_toEndOf="@+id/tvWamGrade"
         app:layout_constraintTop_toTopOf="@+id/tvWamGrade" />
 
-    <Button
-        android:id="@+id/btRemoveExistingWam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="122dp"
-        android:fontFamily="@font/rainyhearts"
-        android:text="Remove existing wam"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btAddCourseMark" />
-
     <TextView
         android:id="@+id/tvWam"
         android:layout_width="wrap_content"
@@ -53,22 +79,10 @@
         android:layout_marginTop="39dp"
         android:layout_marginEnd="263dp"
         android:text="--"
+        android:textColor="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMyWam" />
-
-    <TextView
-        android:id="@+id/tvMyWam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="226dp"
-        android:layout_marginEnd="237dp"
-        android:fontFamily="@font/type_writer"
-        android:text="My WAM"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvWamGrade"
@@ -76,35 +90,54 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
         android:text="--"
+        android:textColor="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/tvWam"
         app:layout_constraintStart_toEndOf="@+id/tvWam"
         app:layout_constraintTop_toTopOf="@+id/tvWam" />
+
+    <TextView
+        android:id="@+id/tvMyWam"
+        android:layout_width="215dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/type_writer"
+        android:text="SAVE YOUR WAM"
+        android:textColor="#FFFDFD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btUseExistingWam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="162dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchUseExistingWamScreen"
         android:text="Use Existing Wam"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWamGrade" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btAddCourseMark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"
-        android:layout_marginTop="44dp"
         android:layout_marginEnd="122dp"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchCreateNewCourseScreen"
         android:text="Add course mark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btUseExistingWam" />
 </android.support.constraint.ConstraintLayout>

@@ -11,10 +11,10 @@ import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-    private ArrayList<Integer> week, date;
+    private ArrayList<String> week, date;
     private ArrayList<String> month, lecture, lab;
 
-    public RecyclerViewAdapter(ArrayList<Integer> week, ArrayList<Integer> date, ArrayList<String> month,
+    public RecyclerViewAdapter(ArrayList<String> week, ArrayList<String> date, ArrayList<String> month,
                                ArrayList<String> lecture, ArrayList<String> lab, ProgressionActivity progressionActivity) {
         this.week = week;
         this.date = date;
@@ -32,7 +32,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
 
-        viewHolder.week.setText("Week " + String.valueOf(week.get(position)));
+        viewHolder.week.setText(String.valueOf(week.get(position)));
         viewHolder.date.setText(String.valueOf(date.get(position)));
         viewHolder.month.setText(month.get(position));
         viewHolder.lecture.setText(lecture.get(position));

@@ -7,46 +7,54 @@
     android:background="@drawable/shelfbg"
     tools:context=".ExplorationActivity">
 
+    <ImageButton
+        android:id="@+id/ibGoToHome3"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="54dp"
+        android:background="#00FFFFFF"
+        android:onClick="launchHomeScreen"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
     <TextView
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginStart="114dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="114dp"
-        android:layout_marginBottom="8dp"
         android:ems="10"
         android:fontFamily="@font/type_writer"
-        android:inputType="textPersonName"
         android:text="LIBRARY"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvExplorationMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvExplorationMain"
         android:layout_width="302dp"
         android:layout_height="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="632dp"
         android:fontFamily="@font/vcr"
-        android:text="Select which major would like to learn more about"
+        android:text="Select which major you would like to learn more about"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <ImageButton
         android:id="@+id/btExplorationAccounting"
@@ -96,17 +104,14 @@
         android:layout_width="112dp"
         android:layout_height="130dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="76dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
         android:background="@drawable/mgmt"
         android:text="Management"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/btExplorationBusinessEconomics"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btExplorationMarketing"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/btExplorationBusinessEconomics" />
 
     <ImageButton
         android:id="@+id/btExplorationMarketing"
@@ -115,12 +120,15 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/mark"
         android:text="Marketing"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toEndOf="@+id/btExplorationInfs"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
     <ImageButton

@@ -16,10 +16,8 @@
         android:layout_height="731dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/scrollbg" />
 
     <EditText
@@ -96,10 +94,8 @@
         android:textColor="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edittext_cnf_password"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintTop_toTopOf="@+id/edittext_cnf_password" />
 
 
     <TextView
@@ -114,10 +110,9 @@
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toStartOf="@+id/textview_login"
-        app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462" />
+        app:layout_constraintVertical_bias="0.008" />
 
     <TextView
         android:id="@+id/textview_login"
@@ -134,10 +129,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintVertical_bias="0.657" />
 
     <TextView
         android:id="@+id/textView3"
@@ -157,30 +152,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="78dp"
-        android:layout_height="71dp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="470dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="73dp"
-        android:layout_height="71dp"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="470dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="64dp"
-        android:layout_height="73dp"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="470dp"
-        tools:srcCompat="@tools:sample/avatars" />
 
 
 </android.support.constraint.ConstraintLayout>

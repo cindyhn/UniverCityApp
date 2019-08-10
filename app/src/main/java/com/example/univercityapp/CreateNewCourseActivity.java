@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class CreateNewCourseActivity extends AppCompatActivity {
 
     Button btAdd;
-    EditText etCourseName;
+    EditText etCourseCode;
     EditText etUnitsOfCredit;
     EditText etMark;
     ListView listView;
@@ -29,7 +29,7 @@ public class CreateNewCourseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_new_course);
 
         btAdd = findViewById(R.id.btAdd);
-        etCourseName = findViewById(R.id.etCourseName);
+        etCourseCode = findViewById(R.id.etCourseCode);
         etUnitsOfCredit = findViewById(R.id.etUnitsOfCredit);
         etMark = findViewById(R.id.etMark);
         listView = findViewById(R.id.listViewMarksRequired);
@@ -43,9 +43,16 @@ public class CreateNewCourseActivity extends AppCompatActivity {
         btAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String getInputCourseName = etCourseName.getText().toString();
+                String getInputCourseName = etCourseCode.getText().toString();
                 int getInputUnitsOfCredit = Integer.parseInt(etUnitsOfCredit.getText().toString());
                 int getInputMark = Integer.parseInt(etMark.getText().toString());
+
+                etCourseCode.getText().clear();
+                etUnitsOfCredit.getText().clear();
+                etMark.getText().clear();
+
+                etCourseCode.setFocusableInTouchMode(true);
+                etCourseCode.requestFocus();
 
                 if (courses.contains(getInputCourseName)) {
                     Toast.makeText(getBaseContext(), "Item Already Added To The Array", Toast.LENGTH_LONG).show();

@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/saveyourwam"
     tools:context=".GoalWamActivity">
+
+    <ImageButton
+        android:id="@+id/ibGoToMyWam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="launchMyWamScreen"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
+        app:srcCompat="?attr/homeAsUpIndicator" />
 
     <TextView
         android:id="@+id/tvAverageMarkRequired"
@@ -20,13 +32,13 @@
 
     <EditText
         android:id="@+id/etCurrentSubjects"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="241dp"
+        android:layout_height="65dp"
         android:layout_marginStart="98dp"
         android:layout_marginTop="144dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
-        android:hint="Current Subjects"
+        android:hint="Current Subject Course Code"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +65,7 @@
         android:layout_marginStart="115dp"
         android:layout_marginTop="26dp"
         android:layout_marginEnd="115dp"
-        android:text="Add Current Subject"
+        android:text="Add Current lecture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etCurrentSubjects" />
@@ -76,7 +88,7 @@
         android:layout_marginStart="176dp"
         android:layout_marginTop="46dp"
         android:layout_marginEnd="176dp"
-        android:text="Average mark required per current subject"
+        android:text="Average mark required per current lecture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listView" />
@@ -96,5 +108,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAverageMarkRequired" />
+
+    <TextView
+        android:id="@+id/tvCurrentSubjectsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="176dp"
+        android:text="Add current subjects one by one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGoal" />
 
 </android.support.constraint.ConstraintLayout>

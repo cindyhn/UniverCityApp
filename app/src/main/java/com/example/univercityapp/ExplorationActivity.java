@@ -29,24 +29,82 @@ public class ExplorationActivity extends AppCompatActivity {
             }
         });
 
-        /*ImageButton btExplorationBusinessEconomics = findViewById(R.id.btExplorationBusinessEconomics);
-        btExplorationBusinessEconomics.setOnClickListener(this);
+        ImageButton btExplorationBusinessEconomics = findViewById(R.id.btExplorationBusinessEconomics);
+        btExplorationBusinessEconomics.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ExplorationEconomics.class);
+                startActivity(intent);
+            }
+        });
+
 
         ImageButton btExplorationBusinessLaw = findViewById(R.id.btExplorationBusinessLaw);
-        btExplorationBusinessLaw.setOnClickListener(this);
+        btExplorationBusinessLaw.setOnClickListener(new View.OnClickListener() {
 
-        ImageButton btExplorationFinance = findViewById(R.id.btExplorationBusinessLaw);
-        btExplorationFinance.setOnClickListener(this);
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ExplorationLaw.class);
+                startActivity(intent);
+            }
+        });
 
-        ImageButton btExplorationIntlBusiness = findViewById(R.id.btExplorationBusinessLaw);
-        btExplorationIntlBusiness.setOnClickListener(this);
 
-        ImageButton btExplorationManagement = findViewById(R.id.btExplorationBusinessLaw);
-        btExplorationManagement.setOnClickListener(this);
+        ImageButton btExplorationFinance = findViewById(R.id.btExplorationFinance);
+        btExplorationFinance.setOnClickListener(new View.OnClickListener() {
 
-        ImageButton btExplorationMarketing = findViewById(R.id.btExplorationBusinessLaw);
-        btExplorationMarketing.setOnClickListener(this);*/
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ExplorationFinance.class);
+                startActivity(intent);
+            }
+        });
 
+
+        ImageButton btExplorationIntlBusiness = findViewById(R.id.btExplorationIntlBusiness);
+        btExplorationIntlBusiness.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ExplorationIntl.class);
+                startActivity(intent);
+            }
+        });
+
+
+        ImageButton btExplorationManagement = findViewById(R.id.btExplorationMgmt);
+        btExplorationManagement.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ExplorationManagement.class);
+                startActivity(intent);
+            }
+        });
+
+
+        ImageButton btExplorationMarketing = findViewById(R.id.btExplorationMarketing);
+        btExplorationMarketing.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ExplorationMarketing.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btExplorationInfs = findViewById(R.id.btExplorationInfs);
+        btExplorationInfs.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ExplorationInfs.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    public void onBackPressed() {
+        Intent intent = new Intent(this, HomeActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(intent);
     }
 
 }

@@ -36,7 +36,13 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".ExplorationAccounting" />
-
+        <activity android:name=".ExplorationEconomics" />
+        <activity android:name=".ExplorationFinance" />
+        <activity android:name=".ExplorationIntl" />
+        <activity android:name=".ExplorationLaw" />
+        <activity android:name=".ExplorationManagement" />
+        <activity android:name=".ExplorationMarketing" />
+        <activity android:name=".ExplorationInfs" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

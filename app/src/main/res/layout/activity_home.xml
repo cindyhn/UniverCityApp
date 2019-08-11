@@ -38,7 +38,7 @@
         android:layout_marginBottom="56dp"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchQuizScreen"
-        android:text="Quiz"
+        android:text="Retake Quiz"
         app:layout_constraintBottom_toTopOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
@@ -55,7 +55,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/school"
         android:fontFamily="@font/rainyhearts"
-        android:onClick="launchMajorMapsScreen"
+        android:onClick="launchProgressionScreen"
         android:text="MajorMaps"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,21 +82,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
-
-    <Button
-        android:id="@+id/btProgression"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="10dp"
-        android:fontFamily="@font/rainyhearts"
-        android:onClick="launchProgressionScreen"
-        android:text="Progression"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btGoToHelp"
@@ -148,5 +133,62 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/coming" />
+
+    <ImageView
+        android:id="@+id/ivCorgi"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="648dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btGoToHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888"
+        app:srcCompat="@drawable/corgistand" />
+
+    <ImageView
+        android:id="@+id/ivCorgiBone"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="648dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCorgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/ivCorgiMedal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dogwithbone" />
+
+    <ImageView
+        android:id="@+id/ivCorgiMedal"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCorgiBone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dogwithmedal" />
+
+    <ImageView
+        android:id="@+id/ivCorgiGrad"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="644dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCorgiBone"
+        app:layout_constraintEnd_toEndOf="@+id/ivCorgiMedal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dogwithgradcap" />
 
 </android.support.constraint.ConstraintLayout>

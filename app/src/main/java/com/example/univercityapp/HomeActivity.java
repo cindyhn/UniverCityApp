@@ -1,15 +1,21 @@
 package com.example.univercityapp;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
 
     private Boolean exit = false;
+
+    public ImageView ivCorgi, ivCorgiBone, ivCorgiMedal, ivCorgiGrad;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +25,52 @@ public class HomeActivity extends AppCompatActivity {
         if (getIntent().getBooleanExtra("EXIT", false)) {
             finish();
         }
+
+
+        ivCorgi = findViewById(R.id.ivCorgi);
+        ivCorgiBone = findViewById(R.id.ivCorgiBone);
+        ivCorgiMedal = findViewById(R.id.ivCorgiMedal);
+        ivCorgiGrad = findViewById(R.id.ivCorgiGrad);
+
+        ivCorgi.setVisibility(View.INVISIBLE);
+        ivCorgiBone.setVisibility(View.INVISIBLE);
+        ivCorgiMedal.setVisibility(View.INVISIBLE);
+        ivCorgiGrad.setVisibility(View.INVISIBLE);
+
+
+        if(Global.totalCourses <  8) {
+            ivCorgi.setVisibility(View.VISIBLE);
+            ivCorgiBone.setVisibility(View.INVISIBLE);
+            ivCorgiMedal.setVisibility(View.INVISIBLE);
+            ivCorgiGrad.setVisibility(View.INVISIBLE);
+        }
+
+        if(Global.totalCourses >= 8 && Global.totalCourses<16) {
+            ivCorgi.setVisibility(View.INVISIBLE);
+            ivCorgiBone.setVisibility(View.VISIBLE);
+            ivCorgiMedal.setVisibility(View.INVISIBLE);
+            ivCorgiGrad.setVisibility(View.INVISIBLE);
+        }
+
+        if(Global.totalCourses >=16 && Global.totalCourses <24) {
+            ivCorgi.setVisibility(View.INVISIBLE);
+            ivCorgiBone.setVisibility(View.INVISIBLE);
+            ivCorgiMedal.setVisibility(View.VISIBLE);
+            ivCorgiGrad.setVisibility(View.INVISIBLE);
+        }
+
+        if(Global.totalCourses >=24 && Global.totalCourses <32) {
+            ivCorgi.setVisibility(View.INVISIBLE);
+            ivCorgiBone.setVisibility(View.INVISIBLE);
+            ivCorgiMedal.setVisibility(View.INVISIBLE);
+            ivCorgiGrad.setVisibility(View.VISIBLE);
+        }
+
+
+
+
+
+
     }
 
     public void launchMyWamScreen(View v) {

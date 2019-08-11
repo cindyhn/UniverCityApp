@@ -60,7 +60,7 @@ public class OnboardingActivity extends AppCompatActivity {
         });
 
         //Populate onboarding screens into pagerAdapter, which is used to add sliding effect to activity transitions
-        onBoardScreens = new int[]{R.layout.onboard0,R.layout.onboard1, R.layout.onboard2, R.layout.onboard3, R.layout.onboard4};
+        onBoardScreens = new int[]{R.layout.onboard0,R.layout.onboard1, R.layout.onboard2, R.layout.onboard3, R.layout.onboard4, R.layout.onboard5,R.layout.onboard6};
         pagerAdapter = new OnboardingAdapter(onBoardScreens,getApplicationContext());
         viewPager.setAdapter(pagerAdapter);
 

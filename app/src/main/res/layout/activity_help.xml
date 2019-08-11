@@ -40,7 +40,7 @@
         android:fontFamily="@font/vcr"
         android:text="FAQs"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

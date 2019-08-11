@@ -8,26 +8,29 @@
     tools:context=".UseExistingWamActivity">
 
     <ImageButton
-        android:id="@+id/ibGoToMyWam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/ibGoToHome2"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="54dp"
+        android:background="#00FFFFFF"
         android:onClick="launchMyWamScreen"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
         app:srcCompat="?attr/homeAsUpIndicator" />
 
     <EditText
         android:id="@+id/etTotalCredits"
-        android:layout_width="180dp"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:fontFamily="@font/vcr"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTotalCredits" />
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/etPreviousWam"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotalCredits"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalCredits"
+        app:layout_constraintTop_toTopOf="@+id/etPreviousWam" />
 
     <TextView
         android:id="@+id/tvUseExistingWam"
@@ -39,28 +42,34 @@
         android:fontFamily="@font/type_writer"
         android:text="Use existing WAM"
         android:textAlignment="center"
+        android:textColor="#FFFDFD"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvDescription1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="296dp"
+        android:layout_height="52dp"
         android:layout_marginTop="25dp"
+        android:fontFamily="@font/vcr"
         android:text="Already have a WAM? Use your previous WAM without needing to add back your past courses."
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvUseExistingWam" />
 
     <TextView
         android:id="@+id/tvDescription2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="289dp"
+        android:layout_height="27dp"
         android:layout_marginStart="71dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="72dp"
+        android:fontFamily="@font/vcr"
         android:text="This will delete your progress for the term."
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDescription1" />
@@ -69,9 +78,10 @@
         android:id="@+id/tvPreviousWam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="128dp"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="96dp"
+        android:fontFamily="@font/vcr"
         android:text="Previous WAM"
         app:layout_constraintEnd_toStartOf="@+id/tvTotalCredits"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,22 +93,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="85dp"
+        android:fontFamily="@font/vcr"
         android:text="Total Credits"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDescription2" />
 
     <EditText
         android:id="@+id/etPreviousWam"
-        android:layout_width="180dp"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="62dp"
+        android:layout_marginTop="21dp"
         android:ems="10"
+        android:fontFamily="@font/vcr"
         android:inputType="numberDecimal"
-        app:layout_constraintEnd_toStartOf="@+id/etTotalCredits"
-        app:layout_constraintHorizontal_bias="0.406"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/tvPreviousWam"
+        app:layout_constraintStart_toStartOf="@+id/tvPreviousWam"
         app:layout_constraintTop_toBottomOf="@+id/tvPreviousWam" />
 
     <Button
@@ -108,6 +118,7 @@
         android:layout_marginStart="162dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="160dp"
+        android:fontFamily="@font/rainyhearts"
         android:text="Add Wam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -8,12 +8,13 @@
     tools:context=".CreateNewCourseActivity">
 
     <ImageButton
-        android:id="@+id/ibGoToMyWam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/ibGoToHome5"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="54dp"
+        android:background="#00FFFFFF"
         android:onClick="launchMyWamScreen"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
         app:srcCompat="?attr/homeAsUpIndicator" />

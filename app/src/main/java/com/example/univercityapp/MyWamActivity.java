@@ -9,23 +9,30 @@ import android.widget.TextView;
 
 public class MyWamActivity extends AppCompatActivity {
 
-    TextView tvWam;
+    TextView textviewWam;
     TextView tvWamGrade;
     TextView tvUnits;
+    TextView textviewUnits;
+    TextView textviewWamGrade;
     Button btRemoveExistingWam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_wam);
+        setContentView(R.layout.activity_my_wam);
 
-        tvWam = findViewById(R.id.tvWam);
+        textviewWam = findViewById(R.id.textviewWam);
         tvWamGrade = findViewById(R.id.tvWamGrade);
         tvUnits = findViewById(R.id.tvUnits);
+        textviewUnits = findViewById(R.id.textviewUnits);
+        textviewWamGrade = findViewById(R.id.textviewWamGrade);
 
-        tvWam.setText("Wam: " + Global.previousWam);
+        textviewWam.setText(Global.previousWam);
         tvWamGrade.setText("Grade: " + Global.grade);
+        textviewWamGrade.setText("Grade: " + Global.grade);
         tvUnits.setText("Units: " + (Global.totalCourses * 6));
+        textviewUnits.setText("UOC: " + (Global.totalCourses * 6));
 
         btRemoveExistingWam = (Button) findViewById(R.id.btRemoveExistingWam);
 
@@ -43,9 +50,11 @@ public class MyWamActivity extends AppCompatActivity {
                 System.out.println(wam);
                 System.out.println(Global.grade);
 
-                tvWam.setText("Wam: " + Global.previousWam);
+                textviewWam.setText(Global.previousWam);
                 tvWamGrade.setText("Grade: " + Global.grade);
+                textviewWamGrade.setText("Grade: " + Global.grade);
                 tvUnits.setText("Units: " + (Global.totalCourses * 6));
+                textviewUnits.setText("UOC: " + (Global.totalCourses * 6));
             }
         });}
 

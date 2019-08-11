@@ -195,13 +195,13 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/AvatarCorgi"
         app:layout_constraintTop_toBottomOf="@+id/SelectAvatar"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/dogwithmedal" />
+        app:layout_constraintVertical_bias="0.159"
+        app:srcCompat="@drawable/boy" />
 
     <ImageView
         android:id="@+id/AvatarGirl"
-        android:layout_width="80dp"
-        android:layout_height="72dp"
+        android:layout_width="91dp"
+        android:layout_height="87dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="8dp"
@@ -209,7 +209,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/SelectAvatar"
         app:layout_constraintVertical_bias="0.026"
-        app:srcCompat="@drawable/dogwithgradcap" />
+        app:srcCompat="@drawable/girl" />
 
 
 </android.support.constraint.ConstraintLayout>

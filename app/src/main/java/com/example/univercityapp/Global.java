@@ -15,7 +15,9 @@ public class Global {
     public static int taxationScore = 0;
     public static int accountingScore = 0;
 
-
+    public static String user;
+    public static String degree;
+    public static String major;
 
 
 

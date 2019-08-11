@@ -21,28 +21,88 @@
         app:srcCompat="@drawable/scrollbg" />
 
     <ImageView
-        android:id="@+id/AvatarCorgi"
-        android:layout_width="146dp"
-        android:layout_height="149dp"
+        android:id="@+id/ivCorgiMedal2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/corgistand"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185"
+        app:srcCompat="@drawable/dogwithmedal" />
+
+    <ImageView
+        android:id="@+id/ivCorgi2"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183"
+        app:srcCompat="@drawable/corgistand" />
+
+    <ImageView
+        android:id="@+id/ivCorgiBone2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186"
+        app:srcCompat="@drawable/dogwithbone" />
+
+    <ImageView
+        android:id="@+id/ivCorgiGrad2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185"
+        app:srcCompat="@drawable/dogwithgradcap" />
+
+    <ImageButton
+        android:id="@+id/ibGoToHome10"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="54dp"
+        android:background="#00FFFFFF"
+        android:onClick="launchHomeScreen"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.186" />
+        app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
+        app:srcCompat="?attr/homeAsUpIndicator" />
 
     <TextView
-        android:id="@+id/Major"
+        android:id="@+id/tvMajor"
         android:layout_width="255dp"
         android:layout_height="33dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/press_start_2p"
-        android:text="Major: Finance"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="10sp"
@@ -53,14 +113,59 @@
         app:layout_constraintVertical_bias="0.537" />
 
     <TextView
-        android:id="@+id/degree"
+        android:id="@+id/tvProfilePageWam"
+        android:layout_width="255dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/press_start_2p"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMajor" />
+
+    <TextView
+        android:id="@+id/tvProfilePageUoC"
+        android:layout_width="255dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/press_start_2p"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfilePageWam" />
+
+    <TextView
+        android:id="@+id/tvProfilePageGoalWam"
+        android:layout_width="255dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/press_start_2p"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfilePageUoC" />
+
+    <TextView
+        android:id="@+id/tvDegree"
         android:layout_width="255dp"
         android:layout_height="33dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/press_start_2p"
-        android:text="Degree: Commerce/Information Systems"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="10sp"
@@ -71,14 +176,13 @@
         app:layout_constraintVertical_bias="0.457" />
 
     <TextView
-        android:id="@+id/Name"
+        android:id="@+id/tvUsername"
         android:layout_width="255dp"
         android:layout_height="33dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/press_start_2p"
-        android:text="Vishal Nomula"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="10sp"
@@ -87,38 +191,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.382" />
-
-    <TextView
-        android:id="@+id/Graduate"
-        android:layout_width="255dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/press_start_2p"
-        android:text="You are currently on track to graduating in 2020"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.8" />
-
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="246dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/Graduate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Major"
-        app:layout_constraintVertical_bias="0.09"
-        app:srcCompat="@drawable/progressbar" />
 
 </android.support.constraint.ConstraintLayout>

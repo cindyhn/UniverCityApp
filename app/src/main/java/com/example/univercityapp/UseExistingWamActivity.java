@@ -29,7 +29,6 @@ public class UseExistingWamActivity extends AppCompatActivity {
         etTotalCredits.setFilters(new InputFilter[]{ new MinMaxFilter("0", "1000")});
 
         Button btAddWam = (Button) findViewById(R.id.btAddWam);
-        Button btBack = (Button) findViewById(R.id.btBack);
 
         btAddWam.setOnClickListener(new View.OnClickListener() {
             @Override

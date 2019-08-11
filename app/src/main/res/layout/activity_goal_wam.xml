@@ -7,6 +7,35 @@
     android:background="@drawable/saveyourwam"
     tools:context=".GoalWamActivity">
 
+    <TextView
+        android:id="@+id/tvCurrentSubjectsDescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/vcr"
+        android:text="Add your current subjects one by one"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGoal" />
+
+    <TextView
+        android:id="@+id/tvAddCourseMark2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="169dp"
+        android:fontFamily="@font/type_writer"
+        android:text="Goal WAM"
+        android:textColor="#FFFDFD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/ibGoToHome8"
         android:layout_width="46dp"
@@ -19,64 +48,48 @@
         app:layout_constraintTop_toBottomOf="@+id/btQuizAnswer4"
         app:srcCompat="?attr/homeAsUpIndicator" />
 
-    <TextView
-        android:id="@+id/tvAverageMarkRequired"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="176dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMarksRequiredInCurrentSubjects" />
-
     <EditText
         android:id="@+id/etCurrentSubjects"
-        android:layout_width="241dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="100dp"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
         android:ems="10"
+        android:fontFamily="@font/vcr"
         android:hint="Current Subject Course Code"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/etGoal"
+        app:layout_constraintTop_toBottomOf="@+id/tvCurrentSubjectsDescription2" />
 
     <EditText
         android:id="@+id/etGoal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="100dp"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
+        android:fontFamily="@font/vcr"
         android:hint="Goal WAM"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCurrentSubjectsDescription" />
 
     <Button
         android:id="@+id/btAddCurrentSubject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="115dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="115dp"
-        android:text="Add Current lecture"
+        android:fontFamily="@font/rainyhearts"
+        android:text="Add Current Subject"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etCurrentSubjects" />
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="366dp"
-        android:layout_height="186dp"
+        android:layout_width="300dp"
+        android:layout_height="115dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,42 +97,43 @@
 
     <TextView
         android:id="@+id/tvMarksRequiredInCurrentSubjects"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="284dp"
+        android:layout_height="66dp"
         android:layout_marginStart="176dp"
-        android:layout_marginTop="46dp"
         android:layout_marginEnd="176dp"
-        android:text="Average mark required per current lecture"
+        android:fontFamily="@font/vcr"
+        android:text="To reach your goal WAM by the end of the current trimester, for each of your current subjects you need an average mark of:"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listView" />
 
-    <Button
-        android:id="@+id/btBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="51dp"
-        android:onClick="launchMyWamScreen"
-        android:text="back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAverageMarkRequired" />
-
     <TextView
         android:id="@+id/tvCurrentSubjectsDescription"
+        android:layout_width="327dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/vcr"
+        android:text="What is your goal WAM by the end of the current trimester?"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddCourseMark2" />
+
+    <TextView
+        android:id="@+id/tvAverageMarkRequired"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="176dp"
-        android:text="Add current subjects one by one"
+        android:fontFamily="@font/type_writer"
+        android:text="--"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etGoal" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMarksRequiredInCurrentSubjects" />
 
 </android.support.constraint.ConstraintLayout>

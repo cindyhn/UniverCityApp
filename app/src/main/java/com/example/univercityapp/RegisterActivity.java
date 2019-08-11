@@ -3,12 +3,12 @@ package com.example.univercityapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ImageView;
 
 public class RegisterActivity extends AppCompatActivity {
     DatabaseHelper db;
@@ -17,6 +17,10 @@ public class RegisterActivity extends AppCompatActivity {
     EditText mTextCnfPassword;
     Button mButtonRegister;
     TextView mTextViewLogin;
+
+    ImageView mAvatarCorgi;
+    ImageView mAvatarBoy;
+    ImageView mAvatarGirl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,35 @@ public class RegisterActivity extends AppCompatActivity {
         mTextCnfPassword = (EditText)findViewById(R.id.edittext_cnf_password);
         mButtonRegister = (Button)findViewById(R.id.button_register);
         mTextViewLogin = (TextView)findViewById(R.id.textview_login);
+
+        mAvatarCorgi = (ImageView) findViewById(R.id.AvatarCorgi);
+        mAvatarBoy = (ImageView) findViewById(R.id.AvatarBoy);
+        mAvatarGirl = (ImageView) findViewById(R.id.AvatarGirl);
+
+        mAvatarCorgi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(RegisterActivity.this,"You have selected Cheddar!",Toast.LENGTH_SHORT).show();
+                db.addAvatar("corgi");
+            }
+        });
+
+        mAvatarBoy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(RegisterActivity.this,"You have selected George!",Toast.LENGTH_SHORT).show();
+                db.addAvatar("boy");
+            }
+        });
+
+        mAvatarGirl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(RegisterActivity.this,"You have selected Yenni!",Toast.LENGTH_SHORT).show();
+                db.addAvatar("girl");
+            }
+        });
+
         mTextViewLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

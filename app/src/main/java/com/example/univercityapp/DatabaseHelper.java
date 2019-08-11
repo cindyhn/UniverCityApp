@@ -12,6 +12,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     public static final String COL_1 ="ID";
     public static final String COL_2 ="username";
     public static final String COL_3 ="password";
+    public static final String COL_4 ="avatar";
+
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
@@ -19,7 +21,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("CREATE TABLE registeruser (ID INTEGER PRIMARY  KEY AUTOINCREMENT, username TEXT, password TEXT)");
+        sqLiteDatabase.execSQL("CREATE TABLE registeruser (ID INTEGER PRIMARY  KEY AUTOINCREMENT, username TEXT, password TEXT, avatar TEXT)");
     }
 
     @Override
@@ -34,6 +36,15 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         contentValues.put("username",user);
         contentValues.put("password",password);
         long res = db.insert("registeruser",null,contentValues);
+        db.close();
+        return  res;
+    }
+
+    public long addAvatar(String avatar){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("avatar",avatar);
+        long res = db.insert("registerAvatar",null,contentValues);
         db.close();
         return  res;
     }

@@ -65,7 +65,7 @@ public class GoalWamActivity extends AppCompatActivity {
                         addArray.get(i-1).setMark(markRequiredPerSubject);
                     }
 
-                    ArrayAdapter<Course> adapter = new ArrayAdapter<Course>(GoalWamActivity.this, android.R.layout.simple_list_item_1, addArray);
+                    ArrayAdapter<Course> adapter = new ArrayAdapter<Course>(GoalWamActivity.this, R.layout.custom_list, addArray);
                     listView.setAdapter(adapter);
 
 //                    for (int i = 0; i < addArray.size(); i++) {

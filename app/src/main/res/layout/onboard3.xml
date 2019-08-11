@@ -63,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv"
         android:layout_width="293dp"
         android:layout_height="60dp"
         android:fontFamily="@font/vcr"

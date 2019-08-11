@@ -87,8 +87,10 @@ public class CreateNewCourseActivity extends AppCompatActivity {
 
                     for (int i = 0; i < courses.size(); i++) {
                         System.out.println(courses.get(i).getName() + courses.get(i).getUoc() + courses.get(i).getMark());
-                        ArrayAdapter<Course> adapter = new ArrayAdapter<Course>(CreateNewCourseActivity.this, android.R.layout.simple_list_item_1, courses);
+                        ArrayAdapter<Course> adapter = new ArrayAdapter<Course>(CreateNewCourseActivity.this, R.layout.custom_list, courses);
                         listView.setAdapter(adapter);
+//                        listAdapter = new CustomListAdapter(YourActivity.this , R.layout.custom_list , mList);
+//                        mListView.setAdapter(listAdapter);
                     }
 
 

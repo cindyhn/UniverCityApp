@@ -22,7 +22,9 @@
         <activity android:name=".UseExistingWamActivity" />
         <activity android:name=".ExplorationActivity" />
         <activity android:name=".MajorMapsActivity" />
-        <activity android:name=".WelcomeActivity">
+        <activity android:name=".AvatarProfilePage" />
+        <activity android:name=".WelcomeActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

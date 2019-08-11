@@ -7,6 +7,20 @@
     android:background="@drawable/univercityhome">
 
     <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="231dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/school" />
+
+    <ImageView
         android:id="@+id/imageView6"
         android:layout_width="198dp"
         android:layout_height="153dp"

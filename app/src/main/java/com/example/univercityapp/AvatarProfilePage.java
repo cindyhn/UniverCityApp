@@ -10,6 +10,4 @@ public class AvatarProfilePage extends AppCompatActivity {
         setContentView(R.layout.activity_app_profile_page);
     }
 
-
-
 }

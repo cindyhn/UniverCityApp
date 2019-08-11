@@ -13,8 +13,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private Boolean exit = false;
 
-    public ImageView ivCorgi, ivCorgiBone, ivCorgiMedal, ivCorgiGrad;
-
+    public ImageView ivCorgi, ivCorgiBone, ivCorgiMedal, ivCorgiGrad, profile;
 
 
     @Override
@@ -26,11 +25,21 @@ public class HomeActivity extends AppCompatActivity {
             finish();
         }
 
+        profile = findViewById(R.id.profile);
+
+        profile.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AvatarProfilePage.class);
+                startActivity(intent);
+            }
+        });
+
 
         ivCorgi = findViewById(R.id.ivCorgi);
         ivCorgiBone = findViewById(R.id.ivCorgiBone);
         ivCorgiMedal = findViewById(R.id.ivCorgiMedal);
         ivCorgiGrad = findViewById(R.id.ivCorgiGrad);
+
 
         ivCorgi.setVisibility(View.INVISIBLE);
         ivCorgiBone.setVisibility(View.INVISIBLE);

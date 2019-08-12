@@ -54,7 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
 //        mAvatarGirl = (ImageView) findViewById(R.id.AvatarGirl);
 
         spinner1 = (Spinner) findViewById(R.id.spinner1);
-        String[] degrees = new String[]{"Degree", "Degree1", "Degree2", "Degree3"};
+        String[] degrees = new String[]{"Select a Degree",  "Commerce/Information Systems", "Commerce", "Information Systems"};
         final List<String> degreesList = new ArrayList<>(Arrays.asList(degrees));
         final ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(
                 this,R.layout.spinner_item,degreesList){
@@ -116,7 +116,7 @@ public class RegisterActivity extends AppCompatActivity {
         System.out.println(Global.degree);
 
         spinner2 = (Spinner) findViewById(R.id.spinner2);
-        String[] majors = new String[]{"Major", "Major1", "Major2", "Major3"};
+        String[] majors = new String[]{"Select a Major", "Finance", "Business Economics", "Marketing", "Accounting", "Business Law", "Business Strategy", "Financial Economics", "HR Management", "International Business","Management", "Real Estate", "Taxation"};
         final List<String> majorsList = new ArrayList<>(Arrays.asList(majors));
         final ArrayAdapter<String> spinnerArrayAdapter2 = new ArrayAdapter<String>(
                 this,R.layout.spinner_item,majorsList){
@@ -225,7 +225,7 @@ public class RegisterActivity extends AppCompatActivity {
                         startActivity(moveToOnBoard);
                     }
                     else{
-                        Toast.makeText(RegisterActivity.this,"Registeration Error",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this,"Registration Error",Toast.LENGTH_SHORT).show();
                     }
 
                 }

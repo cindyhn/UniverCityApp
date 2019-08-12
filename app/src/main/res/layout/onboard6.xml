@@ -48,7 +48,7 @@
     <TextView
         android:id="@+id/tv"
         android:layout_width="293dp"
-        android:layout_height="60dp"
+        android:layout_height="81dp"
         android:fontFamily="@font/vcr"
         android:text="@string/introText7A"
         android:textAlignment="center"

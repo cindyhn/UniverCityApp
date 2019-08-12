@@ -39,7 +39,7 @@
         android:background="@drawable/retakequiz"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchQuizScreen"
-        android:text="Retake Quiz"
+        android:text="Take Quiz"
         app:layout_constraintBottom_toTopOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
@@ -212,5 +212,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035"
         app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/ivCorgiDouble"
+        android:layout_width="114dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginEnd="110dp"
+        app:layout_constraintBottom_toTopOf="@+id/btGoToHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btGoToHome"
+        app:layout_constraintTop_toBottomOf="@+id/btGoToMajorMaps2"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/corgidouble" />
 
 </android.support.constraint.ConstraintLayout>

@@ -17,7 +17,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private Boolean exit = false;
 
-    public ImageView ivCorgi, ivCorgiBone, ivCorgiMedal, ivCorgiGrad, profile;
+    public ImageView ivCorgi, ivCorgiBone, ivCorgiMedal, ivCorgiGrad, ivCorgiDouble, profile;
 
 
     @Override
@@ -45,12 +45,14 @@ public class HomeActivity extends AppCompatActivity {
         ivCorgiBone = findViewById(R.id.ivCorgiBone);
         ivCorgiMedal = findViewById(R.id.ivCorgiMedal);
         ivCorgiGrad = findViewById(R.id.ivCorgiGrad);
+        ivCorgiDouble = findViewById(R.id.ivCorgiDouble);
 
 
         ivCorgi.setVisibility(View.INVISIBLE);
         ivCorgiBone.setVisibility(View.INVISIBLE);
         ivCorgiMedal.setVisibility(View.INVISIBLE);
         ivCorgiGrad.setVisibility(View.INVISIBLE);
+        ivCorgiDouble.setVisibility(View.INVISIBLE);
 
 
         if(Global.totalCourses <  8) {
@@ -58,6 +60,7 @@ public class HomeActivity extends AppCompatActivity {
             ivCorgiBone.setVisibility(View.INVISIBLE);
             ivCorgiMedal.setVisibility(View.INVISIBLE);
             ivCorgiGrad.setVisibility(View.INVISIBLE);
+            ivCorgiDouble.setVisibility(View.INVISIBLE);
         }
 
         if(Global.totalCourses >= 8 && Global.totalCourses<16) {
@@ -65,6 +68,7 @@ public class HomeActivity extends AppCompatActivity {
             ivCorgiBone.setVisibility(View.VISIBLE);
             ivCorgiMedal.setVisibility(View.INVISIBLE);
             ivCorgiGrad.setVisibility(View.INVISIBLE);
+            ivCorgiDouble.setVisibility(View.INVISIBLE);
         }
 
         if(Global.totalCourses >=16 && Global.totalCourses <24) {
@@ -72,6 +76,7 @@ public class HomeActivity extends AppCompatActivity {
             ivCorgiBone.setVisibility(View.INVISIBLE);
             ivCorgiMedal.setVisibility(View.VISIBLE);
             ivCorgiGrad.setVisibility(View.INVISIBLE);
+            ivCorgiDouble.setVisibility(View.INVISIBLE);
         }
 
         if(Global.totalCourses >=24 && Global.totalCourses <32) {
@@ -79,6 +84,15 @@ public class HomeActivity extends AppCompatActivity {
             ivCorgiBone.setVisibility(View.INVISIBLE);
             ivCorgiMedal.setVisibility(View.INVISIBLE);
             ivCorgiGrad.setVisibility(View.VISIBLE);
+            ivCorgiDouble.setVisibility(View.INVISIBLE);
+        }
+
+        if(Global.totalCourses >=32) {
+            ivCorgi.setVisibility(View.INVISIBLE);
+            ivCorgiBone.setVisibility(View.INVISIBLE);
+            ivCorgiMedal.setVisibility(View.INVISIBLE);
+            ivCorgiGrad.setVisibility(View.INVISIBLE);
+            ivCorgiDouble.setVisibility(View.VISIBLE);
         }
 
 

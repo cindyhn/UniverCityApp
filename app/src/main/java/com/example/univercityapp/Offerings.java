@@ -72,19 +72,29 @@ public class Offerings {
         offerings.add(new Offerings("INFS3617", "Networking and Cyber Security", "", "INFS1602 AND 72 UoC", "T1"));
         offerings.add(new Offerings("INFS3634", "Mobile Applications Development", "", "INFS2605 AND 72 UoC", "T1, T3"));
 
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
-        offerings.add(new Offerings("", "", "", "",""));
+        offerings.add(new Offerings("FINS1612", "Capital Markets and Institutions", "", "none","U1C, T1, T2, T3"));
+        offerings.add(new Offerings("FINS1613", "Business Finance", "", "none","U1B, T1, T2, T3"));
+        offerings.add(new Offerings("FINS2622", "Asia-Pacific Capital Markets", "", "FINS1612 AND FINS2624","T2"));
+        offerings.add(new Offerings("FINS2624", "Portfolio Management", "", "FINS1613","T1, T2, T3"));
+        offerings.add(new Offerings("FINS2643", "Wealth Management", "", "FINS2624","U1C, T1, T3"));
+        offerings.add(new Offerings("FINS3616", "International Business Finance", "", "FINS2624","U1C, T1, T3"));
+        offerings.add(new Offerings("FINS3623", "Venture Capital", "", "FINS1613","T1, T3"));
+        offerings.add(new Offerings("FINS3625", "Applied Corporate Finance", "", "FINS1613","T1, T2, T3"));
+        offerings.add(new Offerings("FINS3626", "International Corporate Governance", "", "ACCT1511 AND FINS1613","T2"));
+        offerings.add(new Offerings("FINS3630", "Bank Financial Management", "", "FINS1613 AND FINS1613","U1C, T1, T2, T3"));
+        offerings.add(new Offerings("FINS3631", "Risk and Insurance", "", "FINS1613","T3"));
+        offerings.add(new Offerings("FINS3633", "Real Estate Finance", "", "FINS2624","T1"));
+        offerings.add(new Offerings("FINS3635", "Options, Futures and Risk Management", "", "FINS2624","T1, T2"));
+        offerings.add(new Offerings("FINS3636", "Interest Rate Risk Management", "", "FINS2624","T3"));
+        offerings.add(new Offerings("FINS3637", "Wealth Management Advice", "", "FINS2643","U1C, T1, T2"));
+        offerings.add(new Offerings("FINS3639", "Estate Planning and Asset Protection", "", "FINS2624 AND FINS2643","T2"));
+        offerings.add(new Offerings("FINS3640", "Investment Management Modelling", "", "FINS2624","T1"));
+        offerings.add(new Offerings("FINS3641", "Security Analysis and Valuation", "", "FINS2624","T2, T3"));
+        offerings.add(new Offerings("FINS3648", "Banking, Finance and Technology", "", "FINS1612 AND FINS2624","T2, T3"));
+        offerings.add(new Offerings("FINS3650", "International Banking", "", "FINS2624","T1, T2, T3"));
+        offerings.add(new Offerings("FINS3655", "Behavioural Finance", "", "FINS1613","T1, T3"));
+        offerings.add(new Offerings("FINS3666", "Trading and Market Making", "", "FINS2624","T1, T3"));
+
 
 
 

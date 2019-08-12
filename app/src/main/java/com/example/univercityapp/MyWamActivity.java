@@ -49,6 +49,7 @@ public class MyWamActivity extends AppCompatActivity {
                 Global.grade = "--";
                 Global.totalMarks = 0;
                 Global.totalCourses = 0;
+                Global.currentSubjects = 0;
 
                 double wam = Double.parseDouble(Global.previousWam);
 

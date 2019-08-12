@@ -1,9 +1,13 @@
 package com.example.univercityapp;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -21,6 +25,7 @@ public class MyWamActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_wam);
         setContentView(R.layout.activity_my_wam);
+        setNotifBarTrans();
 
         textviewWam = findViewById(R.id.textviewWam);
         tvWamGrade = findViewById(R.id.tvWamGrade);
@@ -79,7 +84,16 @@ public class MyWamActivity extends AppCompatActivity {
     public void launchHomeScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), HomeActivity.class);
         startActivity(myIntent);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
+    private void setNotifBarTrans() {
+        if (Build.VERSION.SDK_INT >= 21) {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.TRANSPARENT);
+        }
     }
 
 }

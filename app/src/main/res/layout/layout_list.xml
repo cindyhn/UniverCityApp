@@ -24,8 +24,9 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
+            android:fontFamily="@font/type_writer"
             android:text="week"
-            android:textColor="#000"
+            android:textColor="#009688"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -35,9 +36,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="72dp"
+            android:layout_marginStart="116dp"
             android:layout_marginTop="0dp"
+            android:fontFamily="@font/type_writer"
+            android:lineSpacingExtra="2sp"
             android:text="date"
+            android:textColor="#00645B"
             android:textStyle="bold" />
 
         <TextView
@@ -46,8 +50,9 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/lecture2"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="149dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif"
             android:text="lecture"
             android:textColor="#000" />
 
@@ -57,8 +62,9 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/textView3"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="170dp"
+            android:layout_marginStart="160dp"
             android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif"
             android:text="lab"
             android:textColor="#000" />
 
@@ -69,6 +75,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="4dp"
             android:layout_toEndOf="@+id/date"
+            android:fontFamily="@font/type_writer"
             android:text="month" />
 
         <TextView
@@ -78,6 +85,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif"
             android:text="Prerequisites" />
 
         <TextView
@@ -87,6 +95,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="56dp"
+            android:fontFamily="sans-serif"
             android:text="Terms Offered" />
 
     </RelativeLayout>

@@ -64,11 +64,11 @@ public class Offerings {
         offerings.add(new Offerings("INFS1609", "Fundamentals of Business Programming", "", "none", "T1, T3"));
         offerings.add(new Offerings("INFS2603", "Business Analysis", "", "INFS1602 & INFS1603", "T3"));
         offerings.add(new Offerings("INFS2605", "Intermediate Business Programming", "", "INFS1603 AND INFS1609", "U1C, T1, T3"));
-        offerings.add(new Offerings("INFS2608", "Database Management and Big Data Infrastructures", "", "INFS1603", "T1"));
+        offerings.add(new Offerings("INFS2608", "Database Management and Big Data", "", "INFS1603", "T1"));
         offerings.add(new Offerings("INFS2621", "Enterprise Systems", "", "INFS1602", "T2"));
         offerings.add(new Offerings("INFS3603", "Introduction to Business Analytics", "", "INFS1602 AND 72 UoC", "T1, T2"));
         offerings.add(new Offerings("INFS3604", "Business Process Management", "", "INFS2603 AND 72 UoC", "T3"));
-        offerings.add(new Offerings("INFS3605", "Information Systems Innovation and Managememt", "", "INFS3634  AND 72 UoC", "T1, T2"));
+        offerings.add(new Offerings("INFS3605", "IS Innovation and Management", "", "INFS3634  AND 72 UoC", "T1, T2"));
         offerings.add(new Offerings("INFS3617", "Networking and Cyber Security", "", "INFS1602 AND 72 UoC", "T1"));
         offerings.add(new Offerings("INFS3634", "Mobile Applications Development", "", "INFS2605 AND 72 UoC", "T1, T3"));
 

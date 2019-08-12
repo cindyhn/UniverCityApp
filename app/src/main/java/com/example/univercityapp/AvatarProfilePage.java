@@ -92,7 +92,7 @@ public class AvatarProfilePage extends AppCompatActivity {
     public void launchHomeScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), HomeActivity.class);
         startActivity(myIntent);
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
 }

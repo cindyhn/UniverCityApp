@@ -1,9 +1,13 @@
 package com.example.univercityapp;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +32,7 @@ public class GoalWamActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_goal_wam);
+        setNotifBarTrans();
 
         btAddCurrentSubject = findViewById(R.id.btAddCurrentSubject);
         etGoal = findViewById(R.id.etGoal);
@@ -125,5 +130,14 @@ public class GoalWamActivity extends AppCompatActivity {
     public void launchMyWamScreen(View v) {
         Intent myIntent = new Intent(getBaseContext(), MyWamActivity.class);
         startActivity(myIntent);
+    }
+
+    private void setNotifBarTrans() {
+        if (Build.VERSION.SDK_INT >= 21) {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.TRANSPARENT);
+        }
     }
 }

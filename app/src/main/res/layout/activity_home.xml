@@ -91,7 +91,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:background="@android:drawable/ic_menu_help"
+        android:background="@drawable/question"
         android:fontFamily="@font/rainyhearts"
         android:onClick="launchHelpScreen"
         android:text="Help"
@@ -211,7 +211,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035"
-        app:srcCompat="@drawable/user" />
+        app:srcCompat="@drawable/house" />
 
     <ImageView
         android:id="@+id/ivCorgiDouble"

@@ -167,6 +167,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/type_writer"
+        android:maxLength="6"
         android:text="--"
         android:textColor="#FFFDFD"
         android:textSize="18sp"

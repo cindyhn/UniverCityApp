@@ -20,7 +20,7 @@ public class AvatarProfilePage extends AppCompatActivity {
 
     private Boolean exit = false;
 
-    public ImageView ivCorgi2, ivCorgiBone2, ivCorgiMedal2, ivCorgiGrad2;
+    public ImageView ivCorgi2, ivCorgiBone2, ivCorgiMedal2, ivCorgiGrad2, ivCorgiDouble2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +36,14 @@ public class AvatarProfilePage extends AppCompatActivity {
         ivCorgiBone2 = findViewById(R.id.ivCorgiBone2);
         ivCorgiMedal2 = findViewById(R.id.ivCorgiMedal2);
         ivCorgiGrad2 = findViewById(R.id.ivCorgiGrad2);
+        ivCorgiDouble2 = findViewById(R.id.ivCorgiDouble2);
 
 
         ivCorgi2.setVisibility(View.INVISIBLE);
         ivCorgiBone2.setVisibility(View.INVISIBLE);
         ivCorgiMedal2.setVisibility(View.INVISIBLE);
         ivCorgiGrad2.setVisibility(View.INVISIBLE);
+        ivCorgiDouble2.setVisibility(View.INVISIBLE);
 
 
         if(Global.totalCourses <  8) {
@@ -49,6 +51,7 @@ public class AvatarProfilePage extends AppCompatActivity {
             ivCorgiBone2.setVisibility(View.INVISIBLE);
             ivCorgiMedal2.setVisibility(View.INVISIBLE);
             ivCorgiGrad2.setVisibility(View.INVISIBLE);
+            ivCorgiDouble2.setVisibility(View.INVISIBLE);
         }
 
         if(Global.totalCourses >= 8 && Global.totalCourses<16) {
@@ -56,6 +59,7 @@ public class AvatarProfilePage extends AppCompatActivity {
             ivCorgiBone2.setVisibility(View.VISIBLE);
             ivCorgiMedal2.setVisibility(View.INVISIBLE);
             ivCorgiGrad2.setVisibility(View.INVISIBLE);
+            ivCorgiDouble2.setVisibility(View.INVISIBLE);
         }
 
         if(Global.totalCourses >=16 && Global.totalCourses <24) {
@@ -63,6 +67,7 @@ public class AvatarProfilePage extends AppCompatActivity {
             ivCorgiBone2.setVisibility(View.INVISIBLE);
             ivCorgiMedal2.setVisibility(View.VISIBLE);
             ivCorgiGrad2.setVisibility(View.INVISIBLE);
+            ivCorgiDouble2.setVisibility(View.INVISIBLE);
         }
 
         if(Global.totalCourses >=24 && Global.totalCourses <32) {
@@ -71,6 +76,16 @@ public class AvatarProfilePage extends AppCompatActivity {
             ivCorgiMedal2.setVisibility(View.INVISIBLE);
             ivCorgiGrad2.setVisibility(View.VISIBLE);
         }
+
+        if(Global.totalCourses >=32) {
+            ivCorgi2.setVisibility(View.INVISIBLE);
+            ivCorgiBone2.setVisibility(View.INVISIBLE);
+            ivCorgiMedal2.setVisibility(View.INVISIBLE);
+            ivCorgiGrad2.setVisibility(View.INVISIBLE);
+            ivCorgiDouble2.setVisibility(View.VISIBLE);
+        }
+
+
 
         tvUsername = findViewById(R.id.tvUsername);
         tvDegree = findViewById(R.id.tvDegree);

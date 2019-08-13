@@ -2,7 +2,6 @@ package com.example.univercityapp;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.media.Image;
 import android.os.Build;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -45,7 +44,7 @@ public class HomeActivity extends AppCompatActivity {
         ivCorgiBone = findViewById(R.id.ivCorgiBone);
         ivCorgiMedal = findViewById(R.id.ivCorgiMedal);
         ivCorgiGrad = findViewById(R.id.ivCorgiGrad);
-        ivCorgiDouble = findViewById(R.id.ivCorgiDouble);
+        ivCorgiDouble = findViewById(R.id.ivCorgiDouble2);
 
 
         ivCorgi.setVisibility(View.INVISIBLE);

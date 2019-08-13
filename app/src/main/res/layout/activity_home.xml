@@ -215,7 +215,7 @@
         app:srcCompat="@drawable/house" />
 
     <ImageView
-        android:id="@+id/ivCorgiDouble"
+        android:id="@+id/ivCorgiDouble2"
         android:layout_width="114dp"
         android:layout_height="101dp"
         android:layout_marginTop="265dp"
